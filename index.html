@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vokabeltrainer</title>
+<meta name="description" content="Vokabeltrainer mit Karteikasten">
+<meta name="theme-color" content="#a3283f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Vokabeltrainer">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<style>
+/* Layout: one centered column; setup → session card → summary. Leitner boxes as a 5-step shelf. */
+:root{
+  --bg:#f7f2f3; --paper:#fdfafb; --band:#efe2e5; --ink:#2b2326; --muted:#7a6a6f;
+  --rose:#a3283f; --line:#e3d3d7; --ok:#2f7a4f; --okbg:#e3f1e8; --bad:#b4372f; --badbg:#f8e3e1; --warn:#9a6a12;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1c1719; --paper:#251f22; --band:#2f2529; --ink:#eee4e6; --muted:#a8979c;
+  --rose:#f0889b; --line:#3d3236; --ok:#7fd3a0; --okbg:#1f3328; --bad:#f19a92; --badbg:#3a2220; --warn:#e3b660; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1c1719; --paper:#251f22; --band:#2f2529; --ink:#eee4e6; --muted:#a8979c;
+  --rose:#f0889b; --line:#3d3236; --ok:#7fd3a0; --okbg:#1f3328; --bad:#f19a92; --badbg:#3a2220; --warn:#e3b660; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0}
+button,input,textarea{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.backup{display:flex;flex-wrap:wrap;gap:8px}
+textarea{width:100%;min-height:70px;font:13px/1.3 ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
+.note{font-size:.88rem;border-radius:8px;padding:8px 10px;background:var(--band)}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.45}
+.wrap{max-width:640px;margin:0 auto;padding-block:20px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:18px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:600;color:var(--rose);font-size:1.9rem;margin:0}
+h2{font-family:var(--serif);font-weight:600;font-size:1.2rem;margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.label{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.field{display:flex;flex-direction:column;gap:6px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{border-radius:999px}
+button{font:inherit;padding:9px 14px;border-radius:9px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--rose)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+button[aria-pressed="true"]{background:var(--rose);border-color:var(--rose);color:var(--paper)}
+.primary{background:var(--rose);border-color:var(--rose);color:var(--paper);font-weight:700;padding:12px 18px}
+.primary:disabled{opacity:.45;cursor:default}
+.shelf{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.box{border:1px solid var(--line);border-radius:8px;padding:8px 4px;text-align:center;background:var(--bg)}
+.box b{display:block;font-family:var(--serif);font-size:1.3rem;font-variant-numeric:tabular-nums;color:var(--rose)}
+.box span{font-size:.72rem;color:var(--muted)}
+.dueline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+/* session */
+.progress{height:6px;background:var(--band);border-radius:99px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--rose);width:0;transition:width .25s}
+.meta{display:flex;justify-content:space-between;gap:8px;font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 20px;min-height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;text-align:center}
+.prompt{font-family:var(--serif);font-size:1.7rem;line-height:1.25;text-wrap:balance;overflow-wrap:anywhere}
+.prompt.es{color:var(--rose)}
+.prompt i{color:var(--muted);font-size:.7em}
+.answer{font-family:var(--serif);font-size:1.35rem;text-wrap:balance;overflow-wrap:anywhere;border-top:1px solid var(--line);padding-top:12px;width:100%}
+.answer.es{color:var(--rose)}
+.tags{display:flex;gap:6px;justify-content:center}
+.tag{font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.tag.u{border-color:var(--rose);color:var(--rose)}
+.ex{font-family:var(--serif);font-style:italic;font-size:1.02rem;line-height:1.4;max-width:34em;text-wrap:pretty}
+.ex mark{background:none;color:var(--rose);font-style:normal;font-weight:600}
+.answer .ex{margin-top:8px;font-size:.95rem}
+.ex small{display:block;font-family:var(--sans);font-style:normal;font-size:.72rem;color:var(--muted);margin-top:3px;letter-spacing:.03em}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.actions.one{grid-template-columns:1fr}
+.btn-bad{border-color:var(--bad);color:var(--bad)}
+.btn-ok{border-color:var(--ok);color:var(--ok)}
+.choices{display:grid;gap:8px}
+.choices button{text-align:left;padding:12px 14px;font-size:1.02rem}
+.choices button.right{background:var(--okbg);border-color:var(--ok);color:var(--ink)}
+.choices button.wrong{background:var(--badbg);border-color:var(--bad);color:var(--ink)}
+.typed{display:flex;gap:8px}
+.typed input{flex:1;min-width:0;font:inherit;font-size:1.1rem;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--ink)}
+.feedback{border-radius:9px;padding:10px 12px;font-size:.95rem}
+.feedback.ok{background:var(--okbg);color:var(--ok)}
+.feedback.bad{background:var(--badbg);color:var(--bad)}
+.feedback.near{background:var(--okbg);color:var(--warn)}
+.feedback b{color:var(--ink)}
+.keys{font-size:.8rem;color:var(--muted);text-align:center}
+kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;padding:0 5px;background:var(--bg)}
+.result{font-family:var(--serif);font-size:2.4rem;color:var(--rose);font-variant-numeric:tabular-nums}
+.misses{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.misses li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-block:6px}
+.misses .es{color:var(--rose);font-family:var(--serif)}
+.linkbtn{background:none;border:none;color:var(--muted);text-decoration:underline;padding:4px;font-size:.85rem}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.9rem}
+@media (max-width:420px){.prompt{font-size:1.45rem}.shelf{gap:4px}.box b{font-size:1.1rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Vokabeltrainer</h1>
+    <span class="muted small" id="total"></span>
+  </header>
+
+  <!-- KEINE VOKABELN -->
+  <section id="empty" class="panel" hidden>
+    <h2>Noch keine Vokabeln geladen</h2>
+    <p class="small muted" style="margin:0">Lade deine Vokabeldatei, z.&nbsp;B. aus iCloud Drive, Google Drive oder dem Download-Ordner. Die Vokabeln werden nur auf diesem Gerät gespeichert und funktionieren danach auch offline.</p>
+    <button class="primary" id="deck-file-btn">Vokabeldatei laden</button>
+    <details class="field">
+      <summary class="label" style="cursor:pointer">Stattdessen Text einfügen</summary>
+      <textarea id="deck-text" placeholder="hablar;sprechen&#10;la casa;das Haus" style="margin-top:8px"></textarea>
+      <button id="deck-go" style="margin-top:8px">Text übernehmen</button>
+    </details>
+    <details class="field">
+      <summary class="label" style="cursor:pointer">Wie muss die Datei aussehen?</summary>
+      <p class="small" style="margin:8px 0 0">Eine Zeile pro Vokabel, Spalten durch Semikolon oder Tabulator getrennt:<br><b>Wort; Übersetzung; Beispielsatz; Übersetzung des Beispielsatzes</b><br>Die Beispielspalten sind freiwillig. Das Lernwort im Satz kannst du mit [[doppelten eckigen Klammern]] markieren. So speichert Excel als „CSV (Trennzeichen-getrennt)“. Eine Kopfzeile ist erlaubt.</p>
+    </details>
+    <div class="note" data-msg hidden></div>
+  </section>
+
+  <!-- SETUP -->
+  <section id="setup" class="panel" hidden>
+    <div class="field">
+      <span class="label">Dein Karteikasten</span>
+      <div class="shelf" id="shelf"></div>
+      <div class="dueline small"><span id="dueinfo"></span><span class="muted">Fach 5 = sicher gelernt</span></div>
+    </div>
+    <div class="field">
+      <span class="label">Übungsart</span>
+      <div class="seg" data-key="mode">
+        <button id="m-flash" data-v="flash">Karteikarten</button>
+        <button id="m-mc" data-v="mc">Multiple Choice</button>
+        <button id="m-type" data-v="type">Schreiben</button>
+      </div>
+    </div>
+    <div class="field">
+      <span class="label">Richtung</span>
+      <div class="seg" data-key="dir">
+        <button id="d-esde" data-v="esde">Spanisch → Deutsch</button>
+        <button id="d-dees" data-v="dees">Deutsch → Spanisch</button>
+        <button id="d-mix" data-v="mix">Gemischt</button>
+      </div>
+    </div>
+    <div class="field">
+      <span class="label">Auswahl</span>
+      <div class="seg" data-key="pool">
+        <button id="p-due" data-v="due">Fällig &amp; neu</button>
+        <button id="p-all" data-v="all">Alle</button>
+        <button id="p-weak" data-v="weak">Schwache (Fach 1–2)</button>
+        <button id="p-u" data-v="u">Umgangssprachlich</button>
+        <button id="p-fig" data-v="fig">Bildlich</button>
+        <button id="p-ex" data-v="ex">Mit Beispielsatz</button>
+      </div>
+    </div>
+    <div class="field">
+      <span class="label">Karten pro Runde</span>
+      <div class="seg" data-key="size">
+        <button id="s-10" data-v="10">10</button>
+        <button id="s-20" data-v="20">20</button>
+        <button id="s-40" data-v="40">40</button>
+      </div>
+    </div>
+    <button class="primary" id="start">Runde starten</button>
+    <details class="field">
+      <summary class="label" style="cursor:pointer">Vokabeln verwalten</summary>
+      <p class="small muted" id="deck-info" style="margin:8px 0"></p>
+      <div class="backup">
+        <button id="deck-replace">Andere Datei laden</button>
+        <button id="deck-remove" class="btn-bad">Vokabeln entfernen</button>
+      </div>
+      <div class="confirm" id="deck-removeask" hidden style="margin-top:8px">Vokabeln und Lernstand von diesem Gerät löschen?
+        <button id="deck-removeyes" class="btn-bad">Ja, löschen</button>
+        <button id="deck-removeno">Abbrechen</button></div>
+      <p class="small muted" style="margin:8px 0 0">Beim Laden einer neuen Version derselben Liste bleibt der Lernstand für alle Wörter erhalten, die gleich geschrieben sind.</p>
+      <div class="note" data-msg hidden style="margin-top:8px"></div>
+    </details>
+    <input type="file" id="deck-file" hidden>
+    <details class="field">
+      <summary class="label" style="cursor:pointer">Lernstand sichern &amp; übertragen</summary>
+      <p class="small muted" style="margin:8px 0">Sichere deinen Stand ab und zu, z.&nbsp;B. als Datei in iCloud oder als kopierten Code in einer Notiz. Hier kannst du auch einen gesicherten Lernstand aus der alten Glosario-App übernehmen.</p>
+      <div class="backup">
+        <button id="exp-file">Als Datei sichern</button>
+        <button id="exp-copy">Code kopieren</button>
+        <button id="imp-file-btn">Datei laden</button>
+        <input type="file" id="imp-file" hidden>
+      </div>
+      <textarea id="imp-text" placeholder="Gesicherten Code hier einfügen …" style="margin-top:8px"></textarea>
+      <button id="imp-go" style="margin-top:8px">Code übernehmen</button>
+      <div id="bk-msg" class="note" hidden></div>
+    </details>
+    <div class="confirm">
+      <button class="linkbtn" id="reset">Fortschritt zurücksetzen</button>
+      <span id="resetask" hidden>Wirklich alles auf neu setzen?
+        <button id="resetyes" class="btn-bad">Ja, zurücksetzen</button>
+        <button id="resetno">Abbrechen</button></span>
+    </div>
+  </section>
+
+  <!-- SESSION -->
+  <section id="session" hidden style="display:flex;flex-direction:column;gap:14px">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="meta"><span id="pos"></span><span id="score"></span></div>
+    <div class="card" id="card"></div>
+    <div id="controls"></div>
+    <div class="keys" id="keys"></div>
+    <button class="linkbtn" id="quit">Runde beenden</button>
+  </section>
+
+  <!-- SUMMARY -->
+  <section id="summary" class="panel" hidden>
+    <h2>Runde geschafft</h2>
+    <div class="result" id="resnum"></div>
+    <p class="muted small" id="restext" style="margin:0"></p>
+    <ul class="misses" id="misses"></ul>
+    <div class="actions">
+      <button id="again" class="primary">Neue Runde</button>
+      <button id="back">Zur Übersicht</button>
+    </div>
+  </section>
+</div>
+
+<script>
+// ---------- Vokabeln (liegen nur auf dem Gerät) ----------
+const DECK_KEY = "vokabelkasten-deck";
+let DECK = null, DATA = [], L1 = "Spanisch", L2 = "Deutsch";
+function normalizeDeck(o){
+  if (!o || !Array.isArray(o.karten)) throw new Error("In der Datei wurden keine Vokabeln gefunden.");
+  const map = new Map();
+  for (const k of o.karten){
+    const es = String(k.wort || "").trim(), de = String(k.bedeutung || "").trim();
+    if (!es || !de) continue;
+    const ex = (k.beispiele || []).filter(b => b && b[0]).map(b => [String(b[0]), String(b[1] || "")]);
+    if (map.has(es)) { map.get(es).beispiele.push(...ex); continue; }
+    const e = { wort: es, bedeutung: de, beispiele: ex };
+    if (k.umg) e.umg = true; if (k.bildlich) e.bildlich = true; if (k.n !== undefined) e.n = k.n;
+    map.set(es, e);
+  }
+  if (!map.size) throw new Error("In der Datei wurden keine Vokabeln gefunden.");
+  const sp = Array.isArray(o.sprachen) && o.sprachen.length === 2 ? o.sprachen.map(String) : ["Spanisch", "Deutsch"];
+  return { app: "vokabelkasten", titel: String(o.titel || "Vokabeln"), sprachen: sp, karten: [...map.values()] };
+}
+function parseDeck(txt, name){
+  txt = txt.replace(/^\uFEFF/, "").trim();
+  if (txt.startsWith("{")) {
+    let o; try { o = JSON.parse(txt); } catch { throw new Error("Die Datei ist beschädigt oder unvollständig."); }
+    return normalizeDeck(o);
+  }
+  const lines = txt.split(/\r?\n/).filter(l => l.trim());
+  const sep = lines.some(l => l.includes("\t")) ? "\t" : ";";
+  const clean = f => f.trim().replace(/^"(.*)"$/s, "$1").replace(/""/g, '"').trim();
+  const karten = [];
+  lines.forEach((l, i) => {
+    const f = l.split(sep).map(clean);
+    if (f.length < 2 || !f[0] || !f[1]) return;
+    if (i === 0 && /^(wort|vokabel|spanisch|word|begriff)$/i.test(f[0])) return;
+    karten.push({ wort: f[0], bedeutung: f[1], beispiele: f[2] ? [[f[2], f[3] || ""]] : [] });
+  });
+  if (!karten.length) throw new Error("Keine Zeilen im Format „Wort;Übersetzung“ gefunden.");
+  return normalizeDeck({ titel: (name || "Vokabeln").replace(/\.[^.]+$/, ""), karten });
+}
+function applyDeck(d){
+  DECK = d; [L1, L2] = d.sprachen;
+  DATA = d.karten.map(k => ({ id: k.wort, es: k.wort, de: k.bedeutung, u: !!k.umg, fig: !!k.bildlich, n: k.n,
+    ex: k.beispiele.map(([es, de]) => ({ es, de })) }));
+  $("d-esde").textContent = `${L1} → ${L2}`;
+  $("d-dees").textContent = `${L2} → ${L1}`;
+  $("p-u").hidden = !DATA.some(d => d.u);
+  $("p-fig").hidden = !DATA.some(d => d.fig);
+  $("p-ex").hidden = !DATA.some(d => d.ex.length);
+  if ((store.prefs.pool === "u" && $("p-u").hidden) || (store.prefs.pool === "fig" && $("p-fig").hidden) || (store.prefs.pool === "ex" && $("p-ex").hidden)) store.prefs.pool = "due";
+  const nEx = DATA.filter(d => d.ex.length).length;
+  $("total").textContent = nEx ? `${nEx} ${nEx === 1 ? "Vokabel" : "Vokabeln"} mit ${nEx === 1 ? "Beispielsatz" : "Beispielsätzen"}` : `${DATA.length} ${DATA.length === 1 ? "Vokabel" : "Vokabeln"}`;
+  $("deck-info").textContent = `Geladen: „${d.titel}“ mit ${DATA.length} Vokabeln.`;
+}
+function showScreen(){
+  const has = DATA.length > 0;
+  $("empty").hidden = has; $("setup").hidden = !has; $("summary").hidden = true; $("session").hidden = true;
+  if (has) paintSetup(); else $("total").textContent = "";
+}
+const deckMsg = t => document.querySelectorAll("[data-msg]").forEach(el => { el.textContent = t; el.hidden = !t; });
+function loadDeckText(txt, name){
+  try {
+    const d = parseDeck(txt, name);
+    try { localStorage.setItem(DECK_KEY, JSON.stringify(d)); } catch { throw new Error("Auf diesem Gerät ist nicht genug Speicherplatz frei."); }
+    applyDeck(d); showScreen();
+    deckMsg(`„${d.titel}“ geladen: ${d.karten.length} Vokabeln.`);
+  } catch (e) { deckMsg(e.message); }
+}
+async function readFileText(f){
+  const buf = await f.arrayBuffer();
+  let t = new TextDecoder("utf-8").decode(buf);
+  if (t.includes("\uFFFD")) t = new TextDecoder("windows-1252").decode(buf); // ältere Excel-Exporte
+  return t;
+}
+const exHtml = s => esc(s).replace(/\[\[(.+?)\]\]/g, "<mark>$1</mark>");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const GRAM = /(^|\s)(m\/f|m|f|pl|irr|Lat|Cuba)(?=\s|$)/g;
+const gramHtml = s => esc(s).replace(GRAM, "$1<i>$2</i>");
+const deHtml = s => esc(s).replace(/^hier:\s*/, "<i>hier:</i> ");
+const plainEs = s => s.replace(GRAM, "$1").replace(/\s+/g, " ").trim();
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
+  .replace(/ß/g, "ss").replace(/[¡!¿?.,;:'"()]/g, " ").replace(/\s+/g, " ").trim();
+
+// ---------- storage (per browser) ----------
+const KEY = "vokabelkasten-v1";
+let store = { cards: {}, prefs: { mode: "flash", dir: "esde", pool: "due", size: "20" } };
+try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.cards) store = { ...store, ...s, prefs: { ...store.prefs, ...s.prefs } }; } catch {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch {} };
+
+// Leitner: box 0 = neu, 1..5; Wiederholung nach Tagen
+const INTERVAL = [0, 0, 1, 3, 7, 16];
+const DAY = 864e5;
+const today = () => Math.floor(Date.now() / DAY);
+const st = id => store.cards[id] || { box: 0, due: 0 };
+const isDue = id => { const c = st(id); return c.box > 0 && c.due <= today(); };
+
+// ---------- setup UI ----------
+const $ = id => document.getElementById(id);
+
+function paintSetup(){
+  const counts = [0,0,0,0,0,0];
+  DATA.forEach(d => counts[st(d.id).box]++);
+  const names = ["neu","Fach 1","Fach 2","Fach 3","Fach 4","Fach 5"];
+  $("shelf").innerHTML = counts.map((n, i) => `<div class="box"><b>${n}</b><span>${names[i]}</span></div>`).join("");
+  const due = DATA.filter(d => isDue(d.id)).length;
+  $("dueinfo").textContent = due ? `${due} ${due === 1 ? "Karte" : "Karten"} heute fällig` : "Heute nichts fällig";
+  document.querySelectorAll(".seg").forEach(g => {
+    const k = g.dataset.key;
+    g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === store.prefs[k]));
+  });
+  $("start").disabled = buildPool().length === 0;
+  $("start").textContent = buildPool().length ? "Runde starten" : "Keine Karten in dieser Auswahl";
+}
+document.querySelectorAll(".seg").forEach(g => g.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  store.prefs[g.dataset.key] = b.dataset.v; save(); paintSetup();
+}));
+$("reset").onclick = () => $("resetask").hidden = false;
+$("resetno").onclick = () => $("resetask").hidden = true;
+$("resetyes").onclick = () => { store.cards = {}; save(); $("resetask").hidden = true; paintSetup(); };
+
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+function buildPool(){
+  const p = store.prefs.pool;
+  if (p === "all") return DATA.slice();
+  if (p === "u") return DATA.filter(d => d.u);
+  if (p === "fig") return DATA.filter(d => d.fig);
+  if (p === "ex") return DATA.filter(d => d.ex.length);
+  if (p === "weak") return DATA.filter(d => { const b = st(d.id).box; return b === 1 || b === 2; });
+  // fällig zuerst, dann neue in Buchreihenfolge
+  const due = DATA.filter(d => isDue(d.id));
+  const fresh = DATA.filter(d => st(d.id).box === 0);
+  return due.concat(fresh);
+}
+
+// ---------- session ----------
+let S = null;
+function start(){
+  let pool = buildPool();
+  const n = +store.prefs.size;
+  if (store.prefs.pool === "due") {
+    const due = shuffle(pool.filter(d => st(d.id).box > 0)), fresh = shuffle(pool.filter(d => st(d.id).box === 0));
+    pool = due.concat(fresh).slice(0, n);
+  } else pool = shuffle(pool).slice(0, n);
+  shuffle(pool);
+  S = { queue: pool.map(d => ({ d, dir: pickDir() })), total: pool.length, done: 0, right: 0, misses: [], seen: new Set() };
+  $("setup").hidden = true; $("summary").hidden = true; $("session").hidden = false;
+  next();
+}
+const pickDir = () => store.prefs.dir === "mix" ? (Math.random() < .5 ? "esde" : "dees") : store.prefs.dir;
+
+function grade(d, ok){
+  const firstTry = !S.seen.has(d.id);
+  S.seen.add(d.id);
+  const c = st(d.id);
+  if (firstTry){
+    const box = ok ? Math.min(5, Math.max(1, c.box + 1)) : 1;
+    store.cards[d.id] = { box, due: today() + INTERVAL[box] };
+    save();
+    if (ok) S.right++; else S.misses.push(d);
+    S.done++;
+  }
+  if (!ok) S.queue.splice(Math.min(S.queue.length, 3), 0, { d, dir: S.cur.dir }); // kommt bald nochmal
+}
+
+function next(){
+  if (!S.queue.length) return finish();
+  S.cur = S.queue.shift(); S.answered = false;
+  const { d, dir } = S.cur;
+  S.ex = d.ex.length ? d.ex[Math.random() * d.ex.length | 0] : null;
+  $("bar").style.width = (S.done / S.total * 100) + "%";
+  $("pos").textContent = `${Math.min(S.done + 1, S.total)} / ${S.total}` + (S.seen.has(d.id) ? " · Wiederholung" : "");
+  $("score").textContent = `${S.right} richtig`;
+  const tags = (d.u ? '<span class="tag u">umg.</span>' : "") + (d.fig ? '<span class="tag">bildlich</span>' : "");
+  const prompt = dir === "esde" ? `<div class="prompt es">${gramHtml(d.es)}</div>` : `<div class="prompt">${deHtml(d.de)}</div>`;
+  const exPrompt = S.ex ? `<div class="ex">${exHtml(dir === "esde" ? S.ex.es : S.ex.de)}</div>` : "";
+  $("card").innerHTML = prompt + (tags ? `<div class="tags">${tags}</div>` : "") + exPrompt + `<div id="ans"></div>`;
+  ({ flash: flashUI, mc: mcUI, type: typeUI })[store.prefs.mode](d, dir);
+}
+const exAnswer = dir => S.ex ? `<div class="ex">${exHtml(dir === "esde" ? S.ex.de : S.ex.es)}</div>` : "";
+const answerHtml = (d, dir) => dir === "esde"
+  ? `<div class="answer">${deHtml(d.de)}${exAnswer(dir)}</div>`
+  : `<div class="answer es">${gramHtml(d.es)}${exAnswer(dir)}</div>`;
+
+// Karteikarten
+function flashUI(d, dir){
+  $("controls").innerHTML = `<div class="actions one"><button class="primary" id="flip">Aufdecken</button></div>`;
+  $("keys").innerHTML = "<kbd>Leertaste</kbd> aufdecken";
+  $("flip").onclick = () => {
+    $("ans").innerHTML = answerHtml(d, dir); S.answered = true;
+    $("controls").innerHTML = `<div class="actions"><button class="btn-bad" id="no">Nicht gewusst</button><button class="btn-ok" id="yes">Gewusst</button></div>`;
+    $("keys").innerHTML = "<kbd>1</kbd> nicht gewusst · <kbd>2</kbd> gewusst";
+    $("no").onclick = () => { grade(d, false); next(); };
+    $("yes").onclick = () => { grade(d, true); next(); };
+    $("yes").focus();
+  };
+  $("flip").focus();
+}
+
+// Multiple Choice
+function mcUI(d, dir){
+  const label = x => dir === "esde" ? deHtml(x.de) : gramHtml(x.es);
+  const key = x => dir === "esde" ? norm(x.de) : norm(plainEs(x.es));
+  const opts = [d]; const used = new Set([key(d)]);
+  for (const x of shuffle(DATA.slice())) { if (opts.length === 4) break; if (!used.has(key(x))) { used.add(key(x)); opts.push(x); } }
+  shuffle(opts);
+  $("controls").innerHTML = `<div class="choices">${opts.map((o, i) => `<button data-i="${i}">${label(o)}</button>`).join("")}</div>`;
+  $("keys").innerHTML = "<kbd>1</kbd>–<kbd>4</kbd> auswählen · danach <kbd>Enter</kbd> weiter";
+  $("controls").querySelectorAll("button").forEach(b => b.onclick = () => {
+    if (S.answered) return; S.answered = true;
+    const o = opts[+b.dataset.i], ok = o.id === d.id;
+    $("controls").querySelectorAll("button").forEach(x => { if (opts[+x.dataset.i].id === d.id) x.classList.add("right"); });
+    if (!ok) b.classList.add("wrong");
+    if (S.ex) $("ans").innerHTML = `<div class="answer">${exAnswer(dir)}</div>`;
+    grade(d, ok);
+    $("controls").insertAdjacentHTML("beforeend", `<div class="actions one" style="margin-top:10px"><button class="primary" id="go">Weiter</button></div>`);
+    $("go").onclick = next; $("go").focus();
+  });
+}
+
+// Schreiben
+function lev(a, b){
+  const m = a.length, n = b.length, dp = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++){ let prev = dp[0]; dp[0] = i;
+    for (let j = 1; j <= n; j++){ const t = dp[j]; dp[j] = Math.min(dp[j] + 1, dp[j-1] + 1, prev + (a[i-1] === b[j-1] ? 0 : 1)); prev = t; } }
+  return dp[n];
+}
+function variants(d, dir){
+  if (dir === "dees"){
+    const p = plainEs(d.es);
+    const v = [p, p.replace(/\s*\(.*?\)\s*/g, " "), p.replace(/[()]/g, "")];
+    if (p.includes("/")) v.push(p.replace(/\/\w+/, ""));
+    return v.map(norm);
+  }
+  return d.de.replace(/^hier:\s*/, "").split(/[,;]/).flatMap(x => {
+    const t = x.trim(); return [t, t.replace(/\(.*?\)/g, " "), t.replace(/[()]/g, ""), t.replace(/\b(jmd|etw)\.?\s*/g, "")];
+  }).map(norm).filter(Boolean);
+}
+function check(input, d, dir){
+  const a = norm(input).replace(/\b(der|die|das|el|la|los|las|un|una)\s/g, "");
+  if (!a) return "bad";
+  for (const v of variants(d, dir)){
+    const w = v.replace(/\b(der|die|das|el|la|los|las|un|una)\s/g, "");
+    if (a === w || a === v) return "ok";
+    if (w.length >= 5 && lev(a, w) <= Math.max(1, Math.floor(w.length / 7))) return "near";
+  }
+  return "bad";
+}
+function typeUI(d, dir){
+  $("controls").innerHTML = `<form class="typed" id="tf"><input id="inp" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Auf ${dir === "esde" ? L2 : L1} …"><button class="primary" type="submit">Prüfen</button></form><div id="fb"></div>`;
+  $("keys").innerHTML = "<kbd>Enter</kbd> prüfen · leer lassen = aufdecken";
+  $("tf").onsubmit = e => {
+    e.preventDefault();
+    if (S.answered){ next(); return; }
+    S.answered = true;
+    const r = check($("inp").value, d, dir);
+    $("ans").innerHTML = answerHtml(d, dir);
+    $("inp").disabled = true;
+    const msg = r === "ok" ? "Richtig!" : r === "near" ? "Fast richtig, achte auf die Schreibweise." : "Leider falsch.";
+    $("fb").innerHTML = `<div class="feedback ${r}" style="margin-top:10px">${msg}</div>
+      <div class="actions ${r === "bad" ? "" : "one"}" style="margin-top:10px">
+      ${r === "bad" ? '<button id="override">Ich hatte recht</button>' : ""}<button class="primary" id="go">Weiter</button></div>`;
+    let ok = r !== "bad";
+    $("go").onclick = () => { grade(d, ok); next(); };
+    if ($("override")) $("override").onclick = () => { ok = true; grade(d, true); next(); };
+    $("go").focus();
+  };
+  setTimeout(() => $("inp").focus(), 0);
+}
+
+function finish(){
+  $("session").hidden = true; $("summary").hidden = false;
+  $("bar").style.width = "100%";
+  const pct = S.total ? Math.round(S.right / S.total * 100) : 0;
+  $("resnum").textContent = `${S.right} / ${S.total}`;
+  $("restext").textContent = S.misses.length
+    ? `${pct} % beim ersten Versuch. Diese Karten sind zurück in Fach 1:`
+    : `${pct} % beim ersten Versuch. Alles gewusst!`;
+  $("misses").innerHTML = S.misses.map(d => `<li><span class="es">${gramHtml(d.es)}</span><span>${deHtml(d.de)}</span></li>`).join("");
+  $("again").focus();
+}
+$("start").onclick = start;
+$("again").onclick = () => { paintSetup(); if (buildPool().length) start(); else back(); };
+const back = () => { $("summary").hidden = true; $("session").hidden = true; $("setup").hidden = false; paintSetup(); };
+$("back").onclick = back;
+$("quit").onclick = () => S && S.done ? finish() : back();
+
+// Tastatur
+document.addEventListener("keydown", e => {
+  if ($("session").hidden || e.target.tagName === "INPUT") return;
+  const m = store.prefs.mode;
+  if (m === "flash"){
+    if (!S.answered && (e.key === " " || e.key === "Enter")) { e.preventDefault(); $("flip")?.click(); }
+    else if (S.answered && e.key === "1") $("no")?.click();
+    else if (S.answered && e.key === "2") $("yes")?.click();
+  } else if (m === "mc"){
+    if (!S.answered && /^[1-4]$/.test(e.key)) $("controls").querySelectorAll(".choices button")[+e.key - 1]?.click();
+  }
+});
+
+// session section uses flex only when visible
+const sess = $("session"); new MutationObserver(() => sess.style.display = sess.hidden ? "none" : "flex").observe(sess, { attributes: true, attributeFilter: ["hidden"] });
+sess.style.display = "none";
+
+// ---------- Lernstand sichern / wiederherstellen ----------
+const bkMsg = t => { $("bk-msg").textContent = t; $("bk-msg").hidden = false; };
+const exportText = () => JSON.stringify({ app: "vokabelkasten", v: 1, date: new Date().toISOString(), cards: store.cards });
+function importText(txt){
+  let o; try { o = JSON.parse(txt.trim()); } catch { return bkMsg("Der Code ist unvollständig oder beschädigt. Bitte komplett kopieren und erneut einfügen."); }
+  if (o && o.app === "vokabelkasten" && o.cards && !o.karten) store.cards = o.cards;
+  else if (o && o.app === "glosario" && o.cards) {
+    const byN = new Map(DATA.filter(d => d.n !== undefined).map(d => [String(d.n), d.id]));
+    const c = {}; for (const [k, v] of Object.entries(o.cards)) { const id = byN.get(String(k)); if (id) c[id] = v; }
+    if (!Object.keys(c).length) return bkMsg("Der Lernstand passt nicht zu den geladenen Vokabeln.");
+    store.cards = c;
+  } else if (o && o.karten) return bkMsg("Das ist eine Vokabeldatei, kein Lernstand. Lade sie unter „Vokabeln verwalten“.");
+  else return bkMsg("Das ist kein Lernstand aus diesem Trainer.");
+  save(); paintSetup();
+  const n = Object.keys(store.cards).length;
+  bkMsg(`Lernstand übernommen: ${n} ${n === 1 ? "Karte" : "Karten"}${o.date ? " (gesichert am " + new Date(o.date).toLocaleDateString("de-DE") + ")" : ""}.`);
+}
+$("exp-file").onclick = async () => {
+  const name = `vokabeltrainer-lernstand-${new Date().toISOString().slice(0,10)}.json`;
+  const file = new File([exportText()], name, { type: "application/json" });
+  try {
+    if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: "Vokabeltrainer Lernstand" }); return bkMsg("Gesichert."); }
+  } catch (e) { if (e.name === "AbortError") return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(file); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  bkMsg("Datei wird heruntergeladen.");
+};
+$("exp-copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(exportText()); bkMsg("Code kopiert. Füge ihn z. B. in eine Notiz ein."); }
+  catch { $("imp-text").value = exportText(); $("imp-text").select(); bkMsg("Kopieren nicht möglich: Der Code steht jetzt im Textfeld, bitte manuell kopieren."); }
+};
+$("imp-file-btn").onclick = () => $("imp-file").click();
+$("imp-file").onchange = async e => { const f = e.target.files[0]; if (f) importText(await f.text()); e.target.value = ""; };
+$("imp-go").onclick = () => { if ($("imp-text").value.trim()) importText($("imp-text").value); };
+
+// ---------- Offline & dauerhafter Speicher ----------
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
+
+// Vokabeln laden / verwalten
+$("deck-file-btn").onclick = $("deck-replace").onclick = () => { deckMsg(""); $("deck-file").click(); };
+$("deck-file").onchange = async e => { const f = e.target.files[0]; if (f) loadDeckText(await readFileText(f), f.name); e.target.value = ""; };
+$("deck-go").onclick = () => { if ($("deck-text").value.trim()) loadDeckText($("deck-text").value, "Eigene Vokabeln"); };
+$("deck-remove").onclick = () => $("deck-removeask").hidden = false;
+$("deck-removeno").onclick = () => $("deck-removeask").hidden = true;
+$("deck-removeyes").onclick = () => {
+  try { localStorage.removeItem(DECK_KEY); } catch {}
+  store.cards = {}; save(); DECK = null; DATA = []; $("deck-removeask").hidden = true; deckMsg(""); showScreen();
+};
+try { const d = JSON.parse(localStorage.getItem(DECK_KEY)); if (d) applyDeck(normalizeDeck(d)); } catch {}
+showScreen();
+</script>
+</body>
+</html>
