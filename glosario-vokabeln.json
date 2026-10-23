@@ -1,0 +1,4280 @@
+{
+"app": "vokabelkasten",
+"titel": "Glosario Spanisch–Deutsch",
+"sprachen": [
+"Spanisch",
+"Deutsch"
+],
+"karten": [
+{
+"wort": "a bocajarro",
+"bedeutung": "aus nächster Nähe",
+"n": 0,
+"umg": true,
+"beispiele": [
+[
+"Un disparo [[a bocajarro]] y en la base del cráneo.",
+"Ein Schuss [[aus nächster Nähe]] in den Schädelansatz."
+]
+]
+},
+{
+"wort": "a la porra",
+"bedeutung": "zum Teufel",
+"n": 1,
+"umg": true,
+"beispiele": [
+[
+"—[[A la porra]] mi amigo.",
+"„[[Zum Teufel]] mit meinem Freund.“"
+]
+]
+},
+{
+"wort": "a su cargo",
+"bedeutung": "unter sich",
+"n": 2,
+"umg": true,
+"beispiele": [
+[
+"un autodidacta con negocio propio y empleados [[a su cargo]]",
+"ein Autodidakt mit eigenem Geschäft und Angestellten [[unter sich]]"
+]
+]
+},
+{
+"wort": "abarcar",
+"bedeutung": "überblicken",
+"n": 3,
+"beispiele": [
+[
+"Necesitamos [[abarcar]] todas las posibilidades.",
+"Wir müssen alle Möglichkeiten [[überblicken]]."
+]
+]
+},
+{
+"wort": "abatido",
+"bedeutung": "niedergeschlagen",
+"n": 4,
+"beispiele": [
+[
+"Porfirio respira hondo antes de continuar, en tono [[abatido]].",
+"Porfirio atmet tief durch, bevor er [[niedergeschlagen]] weiterspricht."
+]
+]
+},
+{
+"wort": "abigarrado",
+"bedeutung": "bunt gescheckt",
+"n": 5,
+"beispiele": [
+[
+"la [[abigarrada]] mezcla de edificios antiguos y modernos",
+"die [[bunt gescheckte]] Mischung aus alten und modernen Gebäuden"
+]
+]
+},
+{
+"wort": "absuelto",
+"bedeutung": "freigesprochen",
+"n": 6,
+"beispiele": [
+[
+"en cualquier juicio serían [[absueltos]] por falta de pruebas",
+"in jedem Prozess würden sie mangels Beweisen [[freigesprochen]]"
+]
+]
+},
+{
+"wort": "acalorarse",
+"bedeutung": "sich aufregen",
+"n": 7,
+"beispiele": [
+[
+"cuando [[me acaloro]] me voy de la lengua",
+"wenn ich [[mich aufrege]], rede ich zu viel"
+]
+]
+},
+{
+"wort": "acotar",
+"bedeutung": "eingrenzen",
+"n": 8,
+"beispiele": [
+[
+"[[Acotamos]] el círculo, entonces.",
+"Wir [[grenzen]] den Kreis also [[ein]]."
+]
+]
+},
+{
+"wort": "ADN m",
+"bedeutung": "DNA",
+"n": 9,
+"beispiele": [
+[
+"trazas de [[ADN]] de la víctima en los asientos",
+"Spuren von [[DNA]] des Opfers auf den Sitzen"
+]
+]
+},
+{
+"wort": "aduana f",
+"bedeutung": "Zoll",
+"n": 10,
+"beispiele": [
+[
+"Avisa a la policía fronteriza y a la [[aduana]].",
+"Verständige die Grenzpolizei und den [[Zoll]]."
+]
+]
+},
+{
+"wort": "ahogado",
+"bedeutung": "bedrückt",
+"n": 11,
+"beispiele": [
+[
+"Toda esta historia lo tiene [[ahogado]].",
+"Diese ganze Geschichte macht ihn [[bedrückt]]."
+]
+]
+},
+{
+"wort": "alacena f",
+"bedeutung": "Vorratsschrank",
+"n": 12,
+"beispiele": [
+[
+"Esa [[alacena]] abierta, qué hay ahí.",
+"Dieser offene [[Vorratsschrank]] – was ist da drin?"
+]
+]
+},
+{
+"wort": "alborotar",
+"bedeutung": "toben",
+"n": 13,
+"beispiele": [
+[
+"Los niños, [[alborotados]] como siempre, rebuscaban los cereales.",
+"Die Kinder, [[tobend]] wie immer, kramten nach den Cornflakes."
+]
+]
+},
+{
+"wort": "alcoba f",
+"bedeutung": "Schlafzimmer",
+"n": 14,
+"beispiele": [
+[
+"Miraremos primero en la [[alcoba]], luego en la cocina y el baño.",
+"Wir schauen zuerst im [[Schlafzimmer]] nach, dann in Küche und Bad."
+]
+]
+},
+{
+"wort": "altivez f",
+"bedeutung": "Überheblichkeit",
+"n": 15,
+"beispiele": [
+[
+"con la [[altivez]] de quien está acostumbrado a mandar",
+"mit der [[Überheblichkeit]] eines Menschen, der ans Befehlen gewöhnt ist"
+]
+]
+},
+{
+"wort": "amargado",
+"bedeutung": "verbittert",
+"n": 16,
+"beispiele": [
+[
+"con ese bigotillo y esa pinta de [[amargado]]",
+"mit diesem Schnurrbärtchen und diesem [[verbitterten]] Aussehen"
+]
+]
+},
+{
+"wort": "amenaza f",
+"bedeutung": "Drohung",
+"n": 17,
+"beispiele": [
+[
+"Entonces comenzaron las [[amenazas]].",
+"Dann begannen die [[Drohungen]]."
+]
+]
+},
+{
+"wort": "andarse irr con rodeos",
+"bedeutung": "herumdrucksen",
+"n": 18,
+"umg": true,
+"beispiele": [
+[
+"Dime qué hay y no [[te andes con rodeos]], por favor.",
+"Sag mir, was los ist, und [[druck]] bitte nicht [[herum]]."
+]
+]
+},
+{
+"wort": "antro m",
+"bedeutung": "berüchtigte Bar",
+"n": 19,
+"beispiele": [
+[
+"que siga funcionando ese [[antro]]",
+"dass diese [[berüchtigte Bar]] weiter betrieben wird"
+]
+]
+},
+{
+"wort": "apostar a que",
+"bedeutung": "wetten, dass",
+"n": 20,
+"beispiele": [
+[
+"[[Apuesto a que]] Natalia no podría decir de ti lo mismo.",
+"[[Ich wette, dass]] Natalia von dir nicht dasselbe sagen könnte."
+]
+]
+},
+{
+"wort": "apuntar",
+"bedeutung": "zielen",
+"n": 21,
+"beispiele": [
+[
+"El asesino [[apuntó]] con el arma directamente a la cabeza.",
+"Der Mörder [[zielte]] mit der Waffe direkt auf den Kopf."
+]
+]
+},
+{
+"wort": "apuro m",
+"bedeutung": "Bedrängnis, Schwierigkeit",
+"n": 22,
+"beispiele": [
+[
+"ahora que está en un [[apuro]]",
+"jetzt, wo er in [[Bedrängnis]] ist"
+],
+[
+"un hombre con éxito en la vida, pero está en un [[apuro]]",
+"ein erfolgreicher Mann, aber er ist in [[Bedrängnis]]"
+]
+]
+},
+{
+"wort": "arcoíris m",
+"bedeutung": "Regenbogen",
+"n": 23,
+"beispiele": [
+[
+"un chiringuito sobre el que ondea una bandera [[arcoíris]] algo raída",
+"eine Strandbar, über der eine etwas abgeschabte [[Regenbogen]]fahne weht"
+]
+]
+},
+{
+"wort": "arma f reglamentaria",
+"bedeutung": "Dienstwaffe",
+"n": 24,
+"beispiele": [
+[
+"Ese revólver es un [[arma reglamentaria]].",
+"Dieser Revolver ist eine [[Dienstwaffe]]."
+]
+]
+},
+{
+"wort": "arrancar",
+"bedeutung": "starten",
+"n": 25,
+"beispiele": [
+[
+"o vas a conducir tú, ¡[[arranca]] ya!",
+"oder fährst du? Dann [[starte]] endlich!"
+]
+]
+},
+{
+"wort": "arrepentirse",
+"bedeutung": "bereuen, bedauern",
+"n": 26,
+"beispiele": [
+[
+"luego dije cosas de él de las que [[me arrepiento]]",
+"später habe ich Dinge über ihn gesagt, die ich [[bereue]]"
+]
+]
+},
+{
+"wort": "arrojarse sobre",
+"bedeutung": "sich stürzen auf",
+"n": 27,
+"beispiele": [
+[
+"hasta que lo alcanza y [[se arroja sobre]] él",
+"bis sie ihn einholt und [[sich auf]] ihn [[stürzt]]"
+]
+]
+},
+{
+"wort": "arruinado",
+"bedeutung": "ruiniert",
+"n": 28,
+"beispiele": [
+[
+"Y ahora estamos prácticamente [[arruinados]].",
+"Und jetzt sind wir praktisch [[ruiniert]]."
+]
+]
+},
+{
+"wort": "asedio m",
+"bedeutung": "hier: Belästigung",
+"n": 29,
+"beispiele": [
+[
+"la policía persigue con rigor el delito de «[[asedio]]» a los turistas",
+"die Polizei verfolgt streng das Delikt der „[[Belästigung]]“ von Touristen"
+]
+]
+},
+{
+"wort": "asequible",
+"bedeutung": "erschwinglich",
+"n": 30,
+"beispiele": [
+[
+"buena calidad y precios [[asequibles]]",
+"gute Qualität und [[erschwingliche]] Preise"
+]
+]
+},
+{
+"wort": "asignar",
+"bedeutung": "zuteilen",
+"n": 31,
+"beispiele": [
+[
+"un caso al margen de los que se te han [[asignado]]",
+"einen Fall neben denen, die dir [[zugeteilt]] wurden"
+]
+]
+},
+{
+"wort": "asma f",
+"bedeutung": "Asthma",
+"n": 32,
+"beispiele": [
+[
+"La niña necesita una medicación para el [[asma]].",
+"Das Mädchen braucht ein Medikament gegen [[Asthma]]."
+]
+]
+},
+{
+"wort": "asombro m",
+"bedeutung": "Erstaunen",
+"n": 33,
+"beispiele": [
+[
+"—respondió Palacios sin salir de su [[asombro]].",
+"antwortete Palacios, noch ganz in ihrem [[Erstaunen]]."
+]
+]
+},
+{
+"wort": "atadura f",
+"bedeutung": "Fessel",
+"n": 34,
+"beispiele": [
+[
+"tú andabas saltando de país en país y sin [[ataduras]] de ningún tipo",
+"du bist von Land zu Land gezogen, ohne jegliche [[Fesseln]]"
+]
+]
+},
+{
+"wort": "atizar",
+"bedeutung": "schlagen",
+"n": 35,
+"beispiele": [
+[
+"me da miedo que me [[atice]]",
+"ich habe Angst, dass er mich [[schlägt]]"
+]
+]
+},
+{
+"wort": "atracar",
+"bedeutung": "überfallen",
+"n": 36,
+"beispiele": [
+[
+"¿A mi marido lo han [[atracado]]?",
+"Wurde mein Mann [[überfallen]]?"
+]
+]
+},
+{
+"wort": "aullar",
+"bedeutung": "heulen",
+"n": 37,
+"beispiele": [
+[
+"—[[aúlla]] Porfirio—. ¡Bastante tengo con que se haya muerto mi Pedrito!",
+"[[heult]] Porfirio. „Es reicht schon, dass mein Pedrito tot ist!“"
+]
+]
+},
+{
+"wort": "aval m",
+"bedeutung": "Wechselbürgschaft",
+"n": 38,
+"beispiele": [
+[
+"y [[avales]] de todo tipo",
+"und [[Wechselbürgschaften]] aller Art"
+]
+]
+},
+{
+"wort": "bache m",
+"bedeutung": "Tiefpunkt",
+"n": 39,
+"beispiele": [
+[
+"cuando la fábrica sufre algún [[bache]]",
+"wenn die Fabrik einen [[Tiefpunkt]] erlebt"
+]
+]
+},
+{
+"wort": "bala f",
+"bedeutung": "Kugel",
+"n": 40,
+"beispiele": [
+[
+"Una [[bala]] acababa de atravesarme la sien.",
+"Eine [[Kugel]] hatte mir gerade die Schläfe durchschlagen."
+]
+]
+},
+{
+"wort": "bandurria f",
+"bedeutung": "Zupfinstrument",
+"n": 41,
+"beispiele": [
+[
+"—Era una [[bandurria]].",
+"„Es war ein [[Zupfinstrument]].“"
+]
+]
+},
+{
+"wort": "barajar",
+"bedeutung": "hier: erwägen",
+"n": 42,
+"beispiele": [
+[
+"¿[[Barajan]] alguna hipótesis?",
+"[[Erwägen]] Sie irgendeine Hypothese?"
+]
+]
+},
+{
+"wort": "barriada f",
+"bedeutung": "Elendsviertel",
+"n": 43,
+"beispiele": [
+[
+"en una [[barriada]] tan pobre como Lawton",
+"in einem so armen [[Elendsviertel]] wie Lawton"
+]
+]
+},
+{
+"wort": "bastón m",
+"bedeutung": "Stock",
+"n": 44,
+"beispiele": [
+[
+"camina con dificultad, apoyándose en un [[bastón]]",
+"geht mühsam und stützt sich auf einen [[Stock]]"
+]
+]
+},
+{
+"wort": "bate m de béisbol",
+"bedeutung": "Baseballschläger",
+"n": 45,
+"beispiele": [
+[
+"me habrían roto el cráneo con un [[bate de béisbol]]",
+"man hätte mir mit einem [[Baseballschläger]] den Schädel eingeschlagen"
+]
+]
+},
+{
+"wort": "batear",
+"bedeutung": "schlagen (Baseball)",
+"n": 46,
+"beispiele": [
+[
+"su amigo [[bateaba]] siempre mejor que él",
+"sein Freund [[schlug]] beim Baseball immer besser als er"
+]
+]
+},
+{
+"wort": "bocina f",
+"bedeutung": "Hupe",
+"n": 47,
+"beispiele": [
+[
+"ese ruido ensordecedor y taladrante de la [[bocina]] de mi coche",
+"dieser ohrenbetäubende und durchdringende Lärm der [[Hupe]] meines Autos"
+]
+]
+},
+{
+"wort": "bohío m Cuba",
+"bedeutung": "Hütte",
+"n": 48,
+"beispiele": [
+[
+"En una casa abandonada que parecía un [[bohío]]",
+"In einem verlassenen Haus, das wie eine [[Hütte]] aussah"
+]
+]
+},
+{
+"wort": "bonachón",
+"bedeutung": "gutmütig",
+"n": 49,
+"beispiele": [
+[
+"calvo, orondo y [[bonachón]]",
+"kahl, dickbäuchig und [[gutmütig]]"
+]
+]
+},
+{
+"wort": "bostezar",
+"bedeutung": "gähnen",
+"n": 50,
+"beispiele": [
+[
+"confirma el agente Alvarado mientras [[bosteza]]",
+"bestätigt Agent Alvarado und [[gähnt]] dabei"
+]
+]
+},
+{
+"wort": "bullicioso",
+"bedeutung": "hektisch, lärmend",
+"n": 51,
+"beispiele": [
+[
+"El famoso paseo está tan animado y [[bullicioso]] como siempre.",
+"Die berühmte Promenade ist so belebt und [[lärmend]] wie immer."
+]
+]
+},
+{
+"wort": "bulto m",
+"bedeutung": "Bündel",
+"n": 52,
+"beispiele": [
+[
+"señalando un [[bulto]] a un kilómetro de distancia",
+"und zeigt auf ein [[Bündel]] in einem Kilometer Entfernung"
+]
+]
+},
+{
+"wort": "burlón",
+"bedeutung": "spöttisch",
+"n": 53,
+"beispiele": [
+[
+"—le interrumpe Leonardo, [[burlón]].",
+"unterbricht ihn Leonardo [[spöttisch]]."
+]
+]
+},
+{
+"wort": "caer irr rendido",
+"bedeutung": "der Erschöpfung erliegen",
+"n": 54,
+"beispiele": [
+[
+"Miguel [[cae rendido]] y duerme durante casi todo el vuelo.",
+"Miguel [[erliegt der Erschöpfung]] und schläft fast den ganzen Flug."
+]
+]
+},
+{
+"wort": "caja f de cambios",
+"bedeutung": "Gangschaltung",
+"n": 55,
+"beispiele": [
+[
+"la [[caja de cambios]] no va del todo bien",
+"die [[Gangschaltung]] funktioniert nicht richtig"
+]
+]
+},
+{
+"wort": "caja f fuerte",
+"bedeutung": "Safe",
+"n": 56,
+"beispiele": [
+[
+"deja a la vista una [[caja fuerte]]",
+"legt einen [[Safe]] frei"
+]
+]
+},
+{
+"wort": "cambio m de rumbo",
+"bedeutung": "Kurswechsel",
+"n": 57,
+"beispiele": [
+[
+"—Sandra, [[cambio de rumbo]].",
+"„Sandra, [[Kurswechsel]].“"
+]
+]
+},
+{
+"wort": "camiseta f de tirantes",
+"bedeutung": "Muskelshirt",
+"n": 58,
+"beispiele": [
+[
+"Un ciclista, con una [[camiseta de tirantes]] lila, recogerá la bolsa.",
+"Ein Radfahrer in einem lila [[Muskelshirt]] wird die Tasche abholen."
+]
+]
+},
+{
+"wort": "canela f fina",
+"bedeutung": "vom Feinsten",
+"n": 59,
+"umg": true,
+"beispiele": [
+[
+"las chicas de Oriente son [[canela fina]]",
+"die Mädchen aus dem Osten sind [[vom Feinsten]]"
+]
+]
+},
+{
+"wort": "cano",
+"bedeutung": "grau",
+"n": 60,
+"beispiele": [
+[
+"un hombre con pelo [[cano]], alto",
+"ein großer Mann mit [[grauem]] Haar"
+]
+]
+},
+{
+"wort": "capota f",
+"bedeutung": "Autoverdeck",
+"n": 61,
+"beispiele": [
+[
+"y la [[capota]] no luce tampoco muy limpia",
+"und das [[Verdeck]] sieht auch nicht gerade sauber aus"
+]
+]
+},
+{
+"wort": "captura f",
+"bedeutung": "Ergreifung",
+"n": 62,
+"beispiele": [
+[
+"la orden de busca y [[captura]] contra Julián Ruiz",
+"den Fahndungs- und [[Ergreifungs]]befehl gegen Julián Ruiz"
+]
+]
+},
+{
+"wort": "cateto",
+"bedeutung": "tölpelhaft, ungehobelt",
+"n": 63,
+"beispiele": [
+[
+"¿Tan [[cateta]] te parezco?",
+"Komme ich dir so [[tölpelhaft]] vor?"
+]
+]
+},
+{
+"wort": "ceiba f",
+"bedeutung": "Kapokbaum",
+"n": 64,
+"beispiele": [
+[
+"Fernando espera a la sombra de una [[ceiba]].",
+"Fernando wartet im Schatten eines [[Kapokbaums]]."
+]
+]
+},
+{
+"wort": "ceñido",
+"bedeutung": "hauteng",
+"n": 65,
+"beispiele": [
+[
+"con un vestido blanco [[ceñido]]",
+"in einem [[hautengen]] weißen Kleid"
+]
+]
+},
+{
+"wort": "ceño m fruncido",
+"bedeutung": "gerunzelte Stirn",
+"n": 66,
+"beispiele": [
+[
+"—pregunta Fernando con el [[ceño fruncido]].",
+"fragt Fernando mit [[gerunzelter Stirn]]."
+]
+]
+},
+{
+"wort": "cerrar el grifo",
+"bedeutung": "den Geldhahn zudrehen",
+"n": 67,
+"umg": true,
+"beispiele": [
+[
+"Los bancos [[cerraron el grifo]].",
+"Die Banken [[drehten den Geldhahn zu]]."
+]
+]
+},
+{
+"wort": "chantaje m",
+"bedeutung": "Erpressung",
+"n": 68,
+"beispiele": [
+[
+"Nunca habría esperado esto de ti: un [[chantaje]].",
+"Das hätte ich nie von dir erwartet: eine [[Erpressung]]."
+]
+]
+},
+{
+"wort": "chantajear",
+"bedeutung": "erpressen",
+"n": 69,
+"beispiele": [
+[
+"hayan secuestrado a la niña para [[chantajearle]]",
+"das Mädchen entführt haben, um ihn zu [[erpressen]]"
+]
+]
+},
+{
+"wort": "chasquear",
+"bedeutung": "schnalzen",
+"n": 70,
+"beispiele": [
+[
+"Ulpiano [[chasquea]] la lengua.",
+"Ulpiano [[schnalzt]] mit der Zunge."
+]
+]
+},
+{
+"wort": "chaval m",
+"bedeutung": "Junge, Bursche",
+"n": 71,
+"beispiele": [
+[
+"Venía mucho por aquí de [[chaval]].",
+"Als [[Junge]] kam ich oft hierher."
+]
+]
+},
+{
+"wort": "chóped m",
+"bedeutung": "Bierschinken",
+"n": 72,
+"beispiele": [
+[
+"Como si no pudiéramos comer [[chóped]].",
+"Als ob wir keinen [[Bierschinken]] essen könnten."
+]
+]
+},
+{
+"wort": "claxon m",
+"bedeutung": "Hupe",
+"n": 73,
+"beispiele": [
+[
+"mi cabeza cayó desplomada sobre el [[claxon]]",
+"mein Kopf fiel leblos auf die [[Hupe]]"
+]
+]
+},
+{
+"wort": "coartada f",
+"bedeutung": "Alibi",
+"n": 74,
+"beispiele": [
+[
+"¿Puede alguien corroborar su [[coartada]]?",
+"Kann jemand Ihr [[Alibi]] bestätigen?"
+]
+]
+},
+{
+"wort": "cobertizo m",
+"bedeutung": "Schuppen",
+"n": 75,
+"beispiele": [
+[
+"La construcción parece más bien un gran [[cobertizo]].",
+"Das Gebäude sieht eher aus wie ein großer [[Schuppen]]."
+]
+]
+},
+{
+"wort": "coleta f",
+"bedeutung": "Zopf, Pferdeschwanz",
+"n": 76,
+"beispiele": [
+[
+"una niña morena, de siete años, con [[coleta]]",
+"ein dunkelhaariges Mädchen, sieben Jahre alt, mit [[Pferdeschwanz]]"
+]
+]
+},
+{
+"wort": "como alma que lleva el diablo",
+"bedeutung": "als ob der Teufel hinter jmd. her wäre",
+"n": 77,
+"bildlich": true,
+"beispiele": [
+[
+"sale a correr [[como alma que lleva el diablo]]",
+"rennt los, [[als ob der Teufel hinter ihm her wäre]]"
+]
+]
+},
+{
+"wort": "compasión f",
+"bedeutung": "Mitleid",
+"n": 78,
+"beispiele": [
+[
+"Desde lejos, el detective la mira, y siente cierta [[compasión]].",
+"Von Weitem sieht der Detektiv sie an und empfindet ein gewisses [[Mitleid]]."
+]
+]
+},
+{
+"wort": "compay m Cuba",
+"bedeutung": "Freund, Kumpel",
+"n": 79,
+"umg": true,
+"beispiele": [
+[
+"—Oye, [[compay]], no fastidies.",
+"„Hör mal, [[Kumpel]], stör nicht.“"
+]
+]
+},
+{
+"wort": "con incredulidad",
+"bedeutung": "ungläubig",
+"n": 80,
+"beispiele": [
+[
+"—pregunta Fernando [[con incredulidad]].",
+"fragt Fernando [[ungläubig]]."
+]
+]
+},
+{
+"wort": "con sigilo",
+"bedeutung": "leise",
+"n": 81,
+"beispiele": [
+[
+"Leonardo entra [[con sigilo]].",
+"Leonardo geht [[leise]] hinein."
+]
+]
+},
+{
+"wort": "concienzudamente",
+"bedeutung": "gründlich",
+"n": 82,
+"beispiele": [
+[
+"Leonardo rastrea el piso [[concienzudamente]] en busca de pistas.",
+"Leonardo durchsucht die Wohnung [[gründlich]] nach Spuren."
+]
+]
+},
+{
+"wort": "conciliar el sueño",
+"bedeutung": "einschlafen",
+"n": 83,
+"beispiele": [
+[
+"En cambio, ella no es capaz de [[conciliar el sueño]].",
+"Sie dagegen kann nicht [[einschlafen]]."
+]
+]
+},
+{
+"wort": "concluir irr",
+"bedeutung": "schließen, beenden",
+"n": 84,
+"beispiele": [
+[
+"—[[concluye]] la voz, y cuelga.",
+"[[schließt]] die Stimme und legt auf."
+]
+]
+},
+{
+"wort": "concluyente",
+"bedeutung": "endgültig",
+"n": 85,
+"beispiele": [
+[
+"Todo, pruebas [[concluyentes]].",
+"Alles [[endgültige]] Beweise."
+]
+]
+},
+{
+"wort": "concordar irr",
+"bedeutung": "übereinstimmen",
+"n": 86,
+"beispiele": [
+[
+"No [[concuerda]] con las fechas del ingreso.",
+"Das [[stimmt]] nicht mit den Daten der Einzahlung [[überein]]."
+]
+]
+},
+{
+"wort": "concurrido",
+"bedeutung": "voll, belebt",
+"n": 87,
+"beispiele": [
+[
+"El paseo junto al mar está muy [[concurrido]] a esa hora.",
+"Die Uferpromenade ist um diese Zeit sehr [[belebt]]."
+]
+]
+},
+{
+"wort": "congregarse",
+"bedeutung": "sich versammeln",
+"n": 88,
+"beispiele": [
+[
+"cada vez [[se congrega]] más público para escucharlos",
+"es [[versammelt sich]] immer mehr Publikum, um ihnen zuzuhören"
+]
+]
+},
+{
+"wort": "conmocionado",
+"bedeutung": "erschüttert",
+"n": 89,
+"beispiele": [
+[
+"se va sin decir palabra, [[conmocionado]]",
+"geht [[erschüttert]], ohne ein Wort zu sagen"
+]
+]
+},
+{
+"wort": "consolidar",
+"bedeutung": "bestärken",
+"n": 90,
+"beispiele": [
+[
+"La carta de despedida encontrada en el asiento del copiloto lo [[consolidaba]].",
+"Der auf dem Beifahrersitz gefundene Abschiedsbrief [[bestärkte]] das."
+]
+]
+},
+{
+"wort": "consumición f",
+"bedeutung": "hier: Getränk",
+"n": 91,
+"beispiele": [
+[
+"Cuando el camarero les trae las [[consumiciones]]",
+"Als der Kellner ihnen die [[Getränke]] bringt"
+]
+]
+},
+{
+"wort": "contiguo",
+"bedeutung": "angrenzend",
+"n": 92,
+"beispiele": [
+[
+"Márquez desde la mesa [[contigua]]",
+"Márquez vom [[angrenzenden]] Tisch aus"
+]
+]
+},
+{
+"wort": "contundente",
+"bedeutung": "stumpf",
+"n": 93,
+"beispiele": [
+[
+"su muerte fue causada por un solo golpe, con un objeto [[contundente]]",
+"sein Tod wurde durch einen einzigen Schlag mit einem [[stumpfen]] Gegenstand verursacht"
+]
+]
+},
+{
+"wort": "cornudo m",
+"bedeutung": "Gehörnter",
+"n": 94,
+"umg": true,
+"beispiele": [
+[
+"—¡Rovira es un [[cornudo]], cornudooo!",
+"„Rovira ist ein [[Gehörnter]]!“"
+]
+]
+},
+{
+"wort": "corroborar",
+"bedeutung": "bestätigen",
+"n": 95,
+"beispiele": [
+[
+"¿Puede alguien [[corroborar]] su coartada?",
+"Kann jemand Ihr Alibi [[bestätigen]]?"
+]
+]
+},
+{
+"wort": "cotejar",
+"bedeutung": "abgleichen",
+"n": 96,
+"beispiele": [
+[
+"Sí, enseguida [[cotejamos]] sus huellas.",
+"Ja, wir haben seine Fingerabdrücke sofort [[abgeglichen]]."
+]
+]
+},
+{
+"wort": "cría f",
+"bedeutung": "Kind",
+"n": 97,
+"beispiele": [
+[
+"¿Qué culpa tiene la pobre [[cría]]?",
+"Was kann das arme [[Kind]] dafür?"
+]
+]
+},
+{
+"wort": "crispado",
+"bedeutung": "verkrampft",
+"n": 98,
+"beispiele": [
+[
+"—pregunta Maribel con una sonrisa [[crispada]].",
+"fragt Maribel mit einem [[verkrampften]] Lächeln."
+]
+]
+},
+{
+"wort": "cuán",
+"bedeutung": "wie",
+"n": 99,
+"beispiele": [
+[
+"pensando en [[cuán]] extraño es",
+"und denkt daran, [[wie]] seltsam es ist"
+]
+]
+},
+{
+"wort": "cubrir irr las espaldas",
+"bedeutung": "jmd. decken, schützen",
+"n": 100,
+"beispiele": [
+[
+"ahora sería precisamente él quien estaría [[cubriendo las espaldas]] de Jordi Durán",
+"jetzt wäre ausgerechnet er derjenige, der Jordi Durán [[deckt]]"
+]
+]
+},
+{
+"wort": "cuenco m",
+"bedeutung": "Schüssel",
+"n": 101,
+"beispiele": [
+[
+"les sirve dos platos humeantes y dos [[cuencos]] con el gofio",
+"serviert ihnen zwei dampfende Teller und zwei [[Schüsseln]] mit Gofio"
+]
+]
+},
+{
+"wort": "cuero m",
+"bedeutung": "Leder",
+"n": 102,
+"beispiele": [
+[
+"proveedor de la mayor parte del [[cuero]] de la Casa Soler",
+"Lieferant des Großteils des [[Leders]] der Casa Soler"
+]
+]
+},
+{
+"wort": "culata f",
+"bedeutung": "Gewehrkolben",
+"n": 103,
+"beispiele": [
+[
+"con la mano apoyada en la [[culata]] de la pistola",
+"mit der Hand am [[Kolben]] der Pistole"
+]
+]
+},
+{
+"wort": "cumbre f",
+"bedeutung": "Gipfel",
+"n": 104,
+"beispiele": [
+[
+"la [[cumbre]] nevada",
+"der verschneite [[Gipfel]]"
+]
+]
+},
+{
+"wort": "custodia f",
+"bedeutung": "hier: Sorgerecht",
+"n": 105,
+"beispiele": [
+[
+"Ningún juez te concederá la [[custodia]] compartida.",
+"Kein Richter wird dir das gemeinsame [[Sorgerecht]] zusprechen."
+]
+]
+},
+{
+"wort": "custodiar",
+"bedeutung": "beaufsichtigen",
+"n": 106,
+"beispiele": [
+[
+"al parecer la había estado [[custodiando]] una mujer",
+"offenbar hatte eine Frau sie [[beaufsichtigt]]"
+]
+]
+},
+{
+"wort": "dar irr candela",
+"bedeutung": "Gas geben",
+"n": 107,
+"umg": true,
+"beispiele": [
+[
+"En cuanto tome la Vía Blanca le [[damos candela]] al Cadillac.",
+"Sobald wir auf der Vía Blanca sind, [[geben]] wir mit dem Cadillac [[Gas]]."
+]
+]
+},
+{
+"wort": "dar irr el alto",
+"bedeutung": "zum Anhalten auffordern",
+"n": 108,
+"beispiele": [
+[
+"Miguel le [[da el alto]] y hace un par de disparos al aire.",
+"Miguel [[fordert ihn zum Anhalten auf]] und gibt ein paar Schüsse in die Luft ab."
+]
+]
+},
+{
+"wort": "dar irr fruto",
+"bedeutung": "fruchten, Erfolg bringen",
+"n": 109,
+"umg": true,
+"beispiele": [
+[
+"el retrato robot no [[daba]] ningún [[fruto]]",
+"das Phantombild [[brachte]] keinerlei [[Erfolg]]"
+]
+]
+},
+{
+"wort": "dar irr un respingo",
+"bedeutung": "zusammenzucken",
+"n": 110,
+"beispiele": [
+[
+"Fernando [[da un respingo]] y mira fijamente a su padre.",
+"Fernando [[zuckt zusammen]] und sieht seinen Vater starr an."
+]
+]
+},
+{
+"wort": "darse irr a la fuga",
+"bedeutung": "die Flucht ergreifen",
+"n": 111,
+"beispiele": [
+[
+"pudo matarlo por venganza, y [[darse a la fuga]]",
+"er könnte ihn aus Rache getötet und [[die Flucht ergriffen]] haben"
+]
+]
+},
+{
+"wort": "de antemano",
+"bedeutung": "im Voraus",
+"n": 112,
+"beispiele": [
+[
+"sabía [[de antemano]] que esta discusión no me iba a llevar a ningún sitio",
+"ich wusste [[im Voraus]], dass mich diese Diskussion nirgendwohin führen würde"
+]
+]
+},
+{
+"wort": "de higos a brevas",
+"bedeutung": "alle Jubeljahre einmal",
+"n": 113,
+"bildlich": true,
+"beispiele": [
+[
+"Nosotros la veremos [[de higos a brevas]].",
+"Wir werden sie nur [[alle Jubeljahre einmal]] sehen."
+]
+]
+},
+{
+"wort": "de lo lindo",
+"bedeutung": "viel, sehr, ordentlich",
+"n": 114,
+"umg": true,
+"beispiele": [
+[
+"Sufrí [[de lo lindo]].",
+"Ich habe [[ordentlich]] gelitten."
+]
+]
+},
+{
+"wort": "de mala gana",
+"bedeutung": "ungern, widerwillig",
+"n": 115,
+"beispiele": [
+[
+"—contesta Selena [[de mala gana]]—. ¿Eres del Barça?",
+"antwortet Selena [[widerwillig]]. „Bist du für Barça?“"
+]
+]
+},
+{
+"wort": "de oídas",
+"bedeutung": "vom Hörensagen",
+"n": 116,
+"beispiele": [
+[
+"No conozco demasiado ese ambiente, salvo [[de oídas]].",
+"Ich kenne dieses Milieu kaum, außer [[vom Hörensagen]]."
+]
+]
+},
+{
+"wort": "de paisano",
+"bedeutung": "in Zivilkleidung",
+"n": 117,
+"beispiele": [
+[
+"Miguel y Selena van obviamente [[de paisano]].",
+"Miguel und Selena sind natürlich [[in Zivilkleidung]]."
+]
+]
+},
+{
+"wort": "de rechupete",
+"bedeutung": "lecker, zum Anbeißen",
+"n": 118,
+"umg": true,
+"beispiele": [
+[
+"Uff, Porfirio es un mulato que está [[de rechupete]].",
+"Uff, Porfirio ist ein Mulatte [[zum Anbeißen]]."
+]
+]
+},
+{
+"wort": "demorarse",
+"bedeutung": "sich verzögern",
+"n": 119,
+"beispiele": [
+[
+"La transferencia [[se demoraría]] un par de días.",
+"Die Überweisung [[würde sich]] ein paar Tage [[verzögern]]."
+]
+]
+},
+{
+"wort": "demudado",
+"bedeutung": "schockiert",
+"n": 120,
+"beispiele": [
+[
+"El rostro de Andrés Rovira queda [[demudado]] y pálido.",
+"Andrés Rovira sieht [[schockiert]] und blass aus."
+]
+]
+},
+{
+"wort": "desahogarse con alguien",
+"bedeutung": "sich jmd. anvertrauen",
+"n": 121,
+"beispiele": [
+[
+"Julián [[se desahoga conmigo]].",
+"Julián [[vertraut sich mir an]]."
+]
+]
+},
+{
+"wort": "desalentado",
+"bedeutung": "entmutigt",
+"n": 122,
+"beispiele": [
+[
+"—añade Leonardo, [[desalentado]].",
+"fügt Leonardo [[entmutigt]] hinzu."
+],
+[
+"—pregunta Selena Millas, un tanto [[desalentada]].",
+"fragt Selena Millas etwas [[entmutigt]]."
+]
+]
+},
+{
+"wort": "desalojar",
+"bedeutung": "räumen",
+"n": 123,
+"beispiele": [
+[
+"Los agentes consiguieron [[desalojar]] la zona en pocos minutos.",
+"Die Polizisten schafften es, die Gegend in wenigen Minuten zu [[räumen]]."
+]
+]
+},
+{
+"wort": "descarado",
+"bedeutung": "dreist, unverfroren",
+"n": 124,
+"beispiele": [
+[
+"presentaba una actitud [[descarada]] ante las preguntas de la Policía",
+"zeigte eine [[dreiste]] Haltung gegenüber den Fragen der Polizei"
+]
+]
+},
+{
+"wort": "descartar",
+"bedeutung": "ausschließen",
+"n": 125,
+"beispiele": [
+[
+"Es una hipótesis que no podemos [[descartar]].",
+"Das ist eine Hypothese, die wir nicht [[ausschließen]] können."
+]
+]
+},
+{
+"wort": "descompuesto",
+"bedeutung": "verzerrt",
+"n": 126,
+"beispiele": [
+[
+"Aún con la cara [[descompuesta]], la inspectora Palacios se acercó a ella.",
+"Noch mit [[verzerrtem]] Gesicht ging Inspektorin Palacios auf sie zu."
+]
+]
+},
+{
+"wort": "desconsolado",
+"bedeutung": "untröstlich",
+"n": 127,
+"beispiele": [
+[
+"—les dice, [[desconsolado]]—",
+"sagt er [[untröstlich]]"
+]
+]
+},
+{
+"wort": "desencanto m",
+"bedeutung": "Ernüchterung",
+"n": 128,
+"beispiele": [
+[
+"Para [[desencanto]] de los agentes, los estudiantes se limitan a decir que era muy buen profesor.",
+"Zur [[Ernüchterung]] der Polizisten sagen die Studenten nur, er sei ein sehr guter Lehrer gewesen."
+]
+]
+},
+{
+"wort": "desenmascarar",
+"bedeutung": "durchschauen",
+"n": 129,
+"beispiele": [
+[
+"[[Desenmascarar]] toda la trama les llevaría algún tiempo.",
+"Das ganze Komplott zu [[durchschauen]] würde einige Zeit dauern."
+]
+]
+},
+{
+"wort": "deslumbrar",
+"bedeutung": "blenden",
+"n": 130,
+"beispiele": [
+[
+"el blanco brillante de sus paredes me [[deslumbró]] la vista",
+"das glänzende Weiß seiner Wände [[blendete]] mich"
+]
+]
+},
+{
+"wort": "desmejorado",
+"bedeutung": "kränklich",
+"n": 131,
+"beispiele": [
+[
+"ver a María Antonia tan [[desmejorada]] y frágil",
+"María Antonia so [[kränklich]] und zerbrechlich zu sehen"
+]
+]
+},
+{
+"wort": "desorbitado",
+"bedeutung": "übertrieben",
+"n": 132,
+"beispiele": [
+[
+"pide intereses [[desorbitados]]",
+"er verlangt [[überzogene]] Zinsen"
+]
+]
+},
+{
+"wort": "despegar",
+"bedeutung": "hier: abheben",
+"n": 133,
+"beispiele": [
+[
+"Nada más [[despegar]] el avión, Miguel cae rendido y duerme.",
+"Kaum ist das Flugzeug [[abgehoben]], schläft Miguel erschöpft ein."
+]
+]
+},
+{
+"wort": "desperdiciar",
+"bedeutung": "verschwenden",
+"n": 134,
+"beispiele": [
+[
+"Pero estoy harto de que [[desperdiciemos]] comida.",
+"Aber ich habe es satt, dass wir Essen [[verschwenden]]."
+]
+]
+},
+{
+"wort": "desplante m",
+"bedeutung": "Dreistigkeit",
+"n": 135,
+"beispiele": [
+[
+"sufrió los [[desplantes]] y las insolencias de Pedro",
+"er musste Pedros [[Dreistigkeiten]] und Unverschämtheiten ertragen"
+]
+]
+},
+{
+"wort": "desplomado",
+"bedeutung": "hier: leblos",
+"n": 136,
+"beispiele": [
+[
+"mi cabeza cayó [[desplomada]] sobre el claxon",
+"mein Kopf fiel [[leblos]] auf die Hupe"
+]
+]
+},
+{
+"wort": "desplumar",
+"bedeutung": "hier: ausplündern; rupfen",
+"n": 137,
+"umg": true,
+"beispiele": [
+[
+"Si no cumples a tiempo, te [[despluma]].",
+"Wenn du nicht pünktlich zahlst, [[plündert]] er dich [[aus]]."
+]
+]
+},
+{
+"wort": "desprender",
+"bedeutung": "verströmen",
+"n": 138,
+"beispiele": [
+[
+"por el olor que [[desprendía]] el habitáculo",
+"wegen des Geruchs, den der Innenraum [[verströmte]]"
+]
+]
+},
+{
+"wort": "desvanecerse irr",
+"bedeutung": "verschwinden",
+"n": 139,
+"beispiele": [
+[
+"La sonrisa de la azafata [[se desvanece]] al comprobar la identidad de la pasajera.",
+"Das Lächeln der Flugbegleiterin [[verschwindet]], als sie die Identität der Passagierin prüft."
+]
+]
+},
+{
+"wort": "¡Dichosos los ojos!",
+"bedeutung": "Dass man dich mal wieder sieht!",
+"n": 140,
+"umg": true,
+"beispiele": [
+[
+"—¡[[Dichosos los ojos]]! ¿Qué hay, mi hermano?",
+"„[[Dass man dich mal wieder sieht]]! Was gibt's, Bruder?“"
+]
+]
+},
+{
+"wort": "difamar",
+"bedeutung": "in Verruf bringen",
+"n": 141,
+"beispiele": [
+[
+"Había empezado a [[difamarme]] a través de su blog.",
+"Er hatte angefangen, mich über seinen Blog [[in Verruf zu bringen]]."
+]
+]
+},
+{
+"wort": "disparo m",
+"bedeutung": "Schuss",
+"n": 142,
+"beispiele": [
+[
+"Un [[disparo]] a bocajarro y en la base del cráneo.",
+"Ein [[Schuss]] aus nächster Nähe in den Schädelansatz."
+]
+]
+},
+{
+"wort": "distorsionar",
+"bedeutung": "verzerren",
+"n": 143,
+"beispiele": [
+[
+"le habla una voz [[distorsionada]]",
+"spricht eine [[verzerrte]] Stimme zu ihm"
+]
+]
+},
+{
+"wort": "distribuidor m",
+"bedeutung": "Lieferant",
+"n": 144,
+"beispiele": [
+[
+"¡A todos! Clientes, [[distribuidores]], comerciales...",
+"Allen! Kunden, [[Lieferanten]], Vertretern …"
+]
+]
+},
+{
+"wort": "DNI m (Documento Nacional de Identidad)",
+"bedeutung": "Personalausweis",
+"n": 145,
+"beispiele": [
+[
+"los datos del registro policial de su [[DNI]]",
+"die Daten seines [[Personalausweises]] im Polizeiregister"
+]
+]
+},
+{
+"wort": "doblar",
+"bedeutung": "abbiegen",
+"n": 146,
+"beispiele": [
+[
+"pero al [[doblar]] la esquina vi el coche",
+"aber als ich um die Ecke [[bog]], sah ich das Auto"
+]
+]
+},
+{
+"wort": "doble fila f",
+"bedeutung": "zweite Reihe",
+"n": 147,
+"beispiele": [
+[
+"repleta de coches, de ruido y de furgonetas en [[doble fila]]",
+"voller Autos, Lärm und Lieferwagen in [[zweiter Reihe]]"
+]
+]
+},
+{
+"wort": "dueño m",
+"bedeutung": "Geschäftsführer, Besitzer",
+"n": 148,
+"beispiele": [
+[
+"¿Su marido era el [[dueño]] de la Casa Soler?",
+"Ihr Mann war der [[Besitzer]] der Casa Soler?"
+]
+]
+},
+{
+"wort": "dulce m de leche Lat",
+"bedeutung": "Milchkaramellaufstrich",
+"n": 149,
+"beispiele": [
+[
+"arroz criollo con ropa vieja y, de postre, [[dulce de leche]]",
+"kreolischer Reis mit Ropa Vieja und zum Nachtisch [[Milchkaramellaufstrich]]"
+]
+]
+},
+{
+"wort": "echar un cable",
+"bedeutung": "aus der Klemme helfen",
+"n": 150,
+"bildlich": true,
+"beispiele": [
+[
+"si tú no llegas a [[echarme un cable]]",
+"wenn du mir nicht [[aus der Klemme geholfen]] hättest"
+]
+]
+},
+{
+"wort": "embarcar",
+"bedeutung": "hier: ins Flugzeug steigen",
+"n": 151,
+"beispiele": [
+[
+"Ya estarán a punto de [[embarcar]].",
+"Sie werden gleich [[ins Flugzeug steigen]]."
+]
+]
+},
+{
+"wort": "embargar",
+"bedeutung": "wegnehmen",
+"n": 152,
+"beispiele": [
+[
+"No nos [[embargan]] la casa porque está a mi nombre.",
+"Man [[nimmt]] uns das Haus nicht [[weg]], weil es auf meinen Namen läuft."
+]
+]
+},
+{
+"wort": "embarque m",
+"bedeutung": "An-Bord-Gehen",
+"n": 153,
+"beispiele": [
+[
+"La cola de [[embarque]] avanza lentamente.",
+"Die Schlange zum [[An-Bord-Gehen]] rückt langsam vor."
+]
+]
+},
+{
+"wort": "empalagoso",
+"bedeutung": "schmalzig",
+"n": 154,
+"beispiele": [
+[
+"suena un [[empalagoso]] merengue",
+"läuft ein [[schmalziger]] Merengue"
+]
+]
+},
+{
+"wort": "empecinarse en",
+"bedeutung": "stur auf etw. bestehen",
+"n": 155,
+"beispiele": [
+[
+"si [[se empecina en]] negar su crimen",
+"wenn er [[stur darauf besteht]], sein Verbrechen zu leugnen"
+]
+]
+},
+{
+"wort": "empeñado",
+"bedeutung": "verschuldet",
+"n": 156,
+"beispiele": [
+[
+"medio Alicante está [[empeñado]] con él",
+"halb Alicante ist bei ihm [[verschuldet]]"
+]
+]
+},
+{
+"wort": "en el acto",
+"bedeutung": "sofort",
+"n": 157,
+"umg": true,
+"beispiele": [
+[
+"con seguridad, había muerto [[en el acto]]",
+"er war mit Sicherheit [[sofort]] tot gewesen"
+]
+]
+},
+{
+"wort": "en metálico",
+"bedeutung": "cash, bar",
+"n": 158,
+"beispiele": [
+[
+"Yo no tengo tanto [[en metálico]].",
+"Ich habe nicht so viel [[bar]]."
+]
+]
+},
+{
+"wort": "enclenque",
+"bedeutung": "schwächlich",
+"n": 159,
+"beispiele": [
+[
+"con lo [[enclenque]] que soy, me da miedo que me atice",
+"so [[schwächlich]], wie ich bin, habe ich Angst, dass er mich schlägt"
+]
+]
+},
+{
+"wort": "encubierto",
+"bedeutung": "verdeckt",
+"n": 160,
+"beispiele": [
+[
+"préstamos [[encubiertos]], justificados únicamente en pequeñas cantidades",
+"[[verdeckte]] Kredite, nur in kleinen Beträgen belegt"
+]
+]
+},
+{
+"wort": "enfocar",
+"bedeutung": "fokussieren",
+"n": 161,
+"beispiele": [
+[
+"dice Andreas, que [[enfoca]] con el zoom",
+"sagt Andreas, der mit dem Zoom [[fokussiert]]"
+]
+]
+},
+{
+"wort": "engominado",
+"bedeutung": "mit Haarfestiger gestylt",
+"n": 162,
+"beispiele": [
+[
+"con el pelo [[engominado]] y un elegante traje de seda",
+"mit [[Haarfestiger gestyltem]] Haar und einem eleganten Seidenanzug"
+]
+]
+},
+{
+"wort": "enlazar",
+"bedeutung": "verbinden",
+"n": 163,
+"beispiele": [
+[
+"era incapaz de [[enlazar]] dos palabras seguidas",
+"sie war unfähig, zwei Wörter hintereinander zu [[verbinden]]"
+]
+]
+},
+{
+"wort": "ensañarse",
+"bedeutung": "seine Wut auslassen",
+"n": 164,
+"beispiele": [
+[
+"El asesino no necesitó más, y tampoco quiso [[ensañarse]].",
+"Der Mörder brauchte nicht mehr und wollte auch nicht [[seine Wut auslassen]]."
+]
+]
+},
+{
+"wort": "ensordecedor",
+"bedeutung": "ohrenbetäubend",
+"n": 165,
+"beispiele": [
+[
+"ese ruido [[ensordecedor]] y taladrante de la bocina",
+"dieser [[ohrenbetäubende]] und durchdringende Lärm der Hupe"
+]
+]
+},
+{
+"wort": "entramado m",
+"bedeutung": "Verflechtung",
+"n": 166,
+"beispiele": [
+[
+"que conocía muy bien el [[entramado]] policial",
+"der das [[Geflecht]] der Polizei sehr gut kannte"
+]
+]
+},
+{
+"wort": "entrecano",
+"bedeutung": "grau meliert",
+"n": 167,
+"beispiele": [
+[
+"calvo y con un bigote [[entrecano]]",
+"kahl und mit einem [[grau melierten]] Schnurrbart"
+]
+]
+},
+{
+"wort": "entrecortado",
+"bedeutung": "stockend",
+"n": 168,
+"beispiele": [
+[
+"Su voz se notaba alterada y [[entrecortada]].",
+"Ihre Stimme klang aufgeregt und [[stockend]]."
+]
+]
+},
+{
+"wort": "envidiar",
+"bedeutung": "beneiden",
+"n": 169,
+"beispiele": [
+[
+"No niego que a veces te [[envidiaba]].",
+"Ich leugne nicht, dass ich dich manchmal [[beneidet]] habe."
+]
+]
+},
+{
+"wort": "envoltorio m",
+"bedeutung": "Verpackung",
+"n": 170,
+"beispiele": [
+[
+"sosteniendo un [[envoltorio]] de plástico",
+"und hält eine Plastik[[verpackung]] hoch"
+]
+]
+},
+{
+"wort": "equipación f",
+"bedeutung": "Mannschaftsbekleidung",
+"n": 171,
+"beispiele": [
+[
+"Había que comprar algo. La [[equipación]] de fútbol de Iván...",
+"Man musste etwas kaufen. Ivans Fußball-[[Mannschaftsbekleidung]] …"
+]
+]
+},
+{
+"wort": "escarmentar",
+"bedeutung": "aus (negativer) Erfahrung lernen",
+"n": 172,
+"beispiele": [
+[
+"Pensaba que ya habías [[escarmentado]].",
+"Ich dachte, du hättest [[aus deinen Erfahrungen gelernt]]."
+]
+]
+},
+{
+"wort": "escaso",
+"bedeutung": "knapp",
+"n": 173,
+"beispiele": [
+[
+"a través de la matrícula del coche hacía [[escasas]] dos horas",
+"über das Autokennzeichen vor [[knapp]] zwei Stunden"
+]
+]
+},
+{
+"wort": "espetar",
+"bedeutung": "hier: anfahren (verbal); nachhaken, bohren",
+"n": 174,
+"beispiele": [
+[
+"le [[espeta]] Leonardo, entre indignado y decepcionado",
+"[[fährt]] Leonardo ihn halb empört, halb enttäuscht [[an]]"
+],
+[
+"—le [[espeta]] Selena Millas.",
+"[[hakt]] Selena Millas [[nach]]."
+]
+]
+},
+{
+"wort": "esposar",
+"bedeutung": "Handschellen anlegen",
+"n": 175,
+"beispiele": [
+[
+"Los agentes se llevan [[esposado]] a Porfirio.",
+"Die Polizisten führen Porfirio [[in Handschellen]] ab."
+]
+]
+},
+{
+"wort": "esquivar",
+"bedeutung": "ausweichen",
+"n": 176,
+"beispiele": [
+[
+"pero siempre [[esquivaba]] cualquier obstáculo",
+"aber er [[wich]] jedem Hindernis [[aus]]"
+]
+]
+},
+{
+"wort": "establecer irr",
+"bedeutung": "festlegen",
+"n": 177,
+"beispiele": [
+[
+"[[establecieron]] los siguientes pasos",
+"[[legten]] die nächsten Schritte [[fest]]"
+]
+]
+},
+{
+"wort": "estafa f",
+"bedeutung": "Betrug",
+"n": 178,
+"beispiele": [
+[
+"una posible denuncia por [[estafa]]",
+"eine mögliche Anzeige wegen [[Betrugs]]"
+]
+]
+},
+{
+"wort": "estancado",
+"bedeutung": "stagnierend",
+"n": 179,
+"beispiele": [
+[
+"Este caso está [[estancado]], no avanza nada.",
+"Dieser Fall [[stagniert]], er kommt überhaupt nicht voran."
+]
+]
+},
+{
+"wort": "estar irr al corriente",
+"bedeutung": "im Bilde sein",
+"n": 180,
+"umg": true,
+"beispiele": [
+[
+"¿Y usted no [[estaba al corriente]]?",
+"Und Sie [[waren]] nicht [[im Bilde]]?"
+]
+]
+},
+{
+"wort": "estar irr de parranda",
+"bedeutung": "auf Kneipentour sein",
+"n": 181,
+"umg": true,
+"beispiele": [
+[
+"¿[[Estás de parranda]]?",
+"[[Bist]] du [[auf Kneipentour]]?"
+]
+]
+},
+{
+"wort": "estar irr fichado",
+"bedeutung": "vorbestraft sein",
+"n": 182,
+"beispiele": [
+[
+"No pertenecen a nadie que [[esté fichado]].",
+"Sie gehören niemandem, der [[vorbestraft ist]]."
+]
+]
+},
+{
+"wort": "estar irr hecho polvo",
+"bedeutung": "total fertig sein",
+"n": 183,
+"bildlich": true,
+"beispiele": [
+[
+"[[Estoy hecho polvo]], mi hermano.",
+"Ich [[bin total fertig]], Bruder."
+]
+]
+},
+{
+"wort": "estar irr para chuparse los dedos",
+"bedeutung": "sehr lecker sein",
+"n": 184,
+"umg": true,
+"beispiele": [
+[
+"unas papas con mojo que [[están para chuparse los dedos]]",
+"Kartoffeln mit Mojo, die [[sehr lecker sind]]"
+]
+]
+},
+{
+"wort": "estremecer irr",
+"bedeutung": "erschüttern",
+"n": 185,
+"beispiele": [
+[
+"La simple imagen de sus hijos en el patio del colegio la [[estremecía]].",
+"Schon das Bild ihrer Kinder auf dem Schulhof [[erschütterte]] sie."
+]
+]
+},
+{
+"wort": "estupor m",
+"bedeutung": "Verblüffung",
+"n": 186,
+"beispiele": [
+[
+"El [[estupor]] y la incredulidad se apoderan de los alumnos.",
+"[[Verblüffung]] und Unglaube erfassen die Studenten."
+]
+]
+},
+{
+"wort": "exasperado",
+"bedeutung": "wütend, aufgebracht",
+"n": 187,
+"beispiele": [
+[
+"—pregunta Fernando, [[exasperado]].",
+"fragt Fernando [[aufgebracht]]."
+]
+]
+},
+{
+"wort": "expediente m",
+"bedeutung": "Akte",
+"n": 188,
+"beispiele": [
+[
+"clasificando [[expedientes]] y rellenando formularios",
+"sortieren [[Akten]] und füllen Formulare aus"
+]
+]
+},
+{
+"wort": "expulsado",
+"bedeutung": "ausgeschlossen",
+"n": 189,
+"beispiele": [
+[
+"Pedro fue [[expulsado]] del taller.",
+"Pedro wurde aus dem Kurs [[ausgeschlossen]]."
+]
+]
+},
+{
+"wort": "fachada f",
+"bedeutung": "Fassade",
+"n": 190,
+"beispiele": [
+[
+"la [[fachada]] está llena de manchas de humedad",
+"die [[Fassade]] ist voller Feuchtigkeitsflecken"
+]
+]
+},
+{
+"wort": "fastidiar",
+"bedeutung": "stören",
+"n": 191,
+"beispiele": [
+[
+"No [[fastidies]], nos has estropeado el concierto.",
+"[[Stör]] nicht, du hast uns das Konzert verdorben."
+]
+]
+},
+{
+"wort": "forense m/f",
+"bedeutung": "Gerichtsmediziner(in)",
+"n": 192,
+"beispiele": [
+[
+"Psicólogos, [[forenses]], agentes de Policía...",
+"Psychologen, [[Gerichtsmediziner]], Polizisten …"
+]
+]
+},
+{
+"wort": "fraude m",
+"bedeutung": "Betrug",
+"n": 193,
+"beispiele": [
+[
+"No tenemos más que un posible [[fraude]].",
+"Wir haben nicht mehr als einen möglichen [[Betrug]]."
+]
+]
+},
+{
+"wort": "freno m",
+"bedeutung": "Bremse",
+"n": 194,
+"beispiele": [
+[
+"los [[frenos]] de mi coche fallaron",
+"die [[Bremsen]] meines Autos versagten"
+]
+]
+},
+{
+"wort": "fula f",
+"bedeutung": "US-Dollar",
+"n": 195,
+"umg": true,
+"beispiele": [
+[
+"yo sé que tú tienes miles de [[fulas]]",
+"ich weiß, dass du Tausende [[US-Dollar]] hast"
+]
+]
+},
+{
+"wort": "fundirse a negro",
+"bedeutung": "schwarz werden",
+"n": 196,
+"umg": true,
+"beispiele": [
+[
+"Mi vida [[se fundía a negro]].",
+"Mein Leben [[wurde schwarz]]."
+]
+]
+},
+{
+"wort": "fustigar",
+"bedeutung": "peitschen",
+"n": 197,
+"beispiele": [
+[
+"que él le ataba las muñecas a Pedro José y que le [[fustigaba]]",
+"dass er Pedro José die Handgelenke fesselte und ihn [[peitschte]]"
+]
+]
+},
+{
+"wort": "garbanzo m",
+"bedeutung": "Kichererbse",
+"n": 198,
+"beispiele": [
+[
+"—¡Cocido de [[garbanzos]]! —responde la niña.",
+"„[[Kichererbsen]]eintopf!“, antwortet das Mädchen."
+]
+]
+},
+{
+"wort": "genio m tutelar",
+"bedeutung": "Schutzgeist",
+"n": 199,
+"beispiele": [
+[
+"Uno de los [[genios tutelares]] de su poesía era Pier Paolo Pasolini.",
+"Einer der [[Schutzgeister]] seiner Dichtung war Pier Paolo Pasolini."
+]
+]
+},
+{
+"wort": "gringo m Lat",
+"bedeutung": "Nordamerikaner",
+"n": 200,
+"umg": true,
+"beispiele": [
+[
+"hasta los [[gringos]] quieren hacer negocios con nosotros",
+"sogar die [[Nordamerikaner]] wollen Geschäfte mit uns machen"
+]
+]
+},
+{
+"wort": "guagua f Cuba",
+"bedeutung": "Bus",
+"n": 201,
+"beispiele": [
+[
+"Mi esposa no va a andar tomando la [[guagua]].",
+"Meine Frau wird nicht ständig den [[Bus]] nehmen."
+]
+]
+},
+{
+"wort": "guardabarros m",
+"bedeutung": "Kotflügel",
+"n": 202,
+"beispiele": [
+[
+"encontraremos tierra volcánica en los [[guardabarros]]",
+"wir werden Vulkanerde an den [[Kotflügeln]] finden"
+]
+]
+},
+{
+"wort": "habitáculo m",
+"bedeutung": "Innenraum",
+"n": 203,
+"beispiele": [
+[
+"por el olor que desprendía el [[habitáculo]]",
+"wegen des Geruchs, den der [[Innenraum]] verströmte"
+]
+]
+},
+{
+"wort": "hacer irr la cruz",
+"bedeutung": "mit jmd. brechen",
+"n": 204,
+"umg": true,
+"beispiele": [
+[
+"pensaba que le habían [[hecho la cruz]] para siempre",
+"er dachte, man habe für immer [[mit ihm gebrochen]]"
+]
+]
+},
+{
+"wort": "hacer irr las paces",
+"bedeutung": "Frieden schließen",
+"n": 205,
+"beispiele": [
+[
+"tú debías haber [[hecho las paces]] con Maribel",
+"du hättest mit Maribel [[Frieden schließen]] sollen"
+]
+]
+},
+{
+"wort": "¡Hay que fastidiarse!",
+"bedeutung": "Das ist ja nicht zu fassen!",
+"n": 206,
+"beispiele": [
+[
+"—¡[[Hay que fastidiarse]]! Y de eso tampoco sabía nada.",
+"„[[Das ist ja nicht zu fassen]]! Und davon wusste sie auch nichts.“"
+]
+]
+},
+{
+"wort": "herencia f",
+"bedeutung": "Erbschaft",
+"n": 207,
+"beispiele": [
+[
+"Cobré la [[herencia]] y saldé mi deuda.",
+"Ich bekam die [[Erbschaft]] und beglich meine Schulden."
+]
+]
+},
+{
+"wort": "huella f",
+"bedeutung": "(Finger-)Abdruck",
+"n": 208,
+"beispiele": [
+[
+"Hemos tomado algunas [[huellas]].",
+"Wir haben einige [[Abdrücke]] genommen."
+]
+]
+},
+{
+"wort": "huellas f pl dactilares",
+"bedeutung": "Fingerabdrücke",
+"n": 209,
+"beispiele": [
+[
+"Pueden tener [[huellas dactilares]].",
+"Da könnten [[Fingerabdrücke]] drauf sein."
+]
+]
+},
+{
+"wort": "humeante",
+"bedeutung": "dampfend",
+"n": 210,
+"beispiele": [
+[
+"con un vaso de café [[humeante]]",
+"mit einem Glas [[dampfendem]] Kaffee"
+],
+[
+"les sirve dos platos [[humeantes]] y dos cuencos con el gofio",
+"serviert ihnen zwei [[dampfende]] Teller und zwei Schüsseln mit Gofio"
+]
+]
+},
+{
+"wort": "impacto m",
+"bedeutung": "Einschlag",
+"n": 211,
+"beispiele": [
+[
+"Lo último que sentí fue un [[impacto]] seco en la cabeza.",
+"Das Letzte, was ich spürte, war ein trockener [[Einschlag]] im Kopf."
+]
+]
+},
+{
+"wort": "impartir",
+"bedeutung": "erteilen",
+"n": 212,
+"beispiele": [
+[
+"el curso de escritura creativa que [[impartía]] Pedro José Díaz",
+"der Kurs für kreatives Schreiben, den Pedro José Díaz [[erteilte]]"
+]
+]
+},
+{
+"wort": "impedir irr",
+"bedeutung": "verhindern",
+"n": 213,
+"beispiele": [
+[
+"Hay que [[impedir]] la salida del país de María Isabel López Martínez.",
+"Wir müssen die Ausreise von María Isabel López Martínez [[verhindern]]."
+]
+]
+},
+{
+"wort": "implicado",
+"bedeutung": "verwickelt",
+"n": 214,
+"beispiele": [
+[
+"¿Usted piensa que Rovira puede estar [[implicado]] en su muerte?",
+"Glauben Sie, dass Rovira in seinen Tod [[verwickelt]] sein könnte?"
+]
+]
+},
+{
+"wort": "imponer irr",
+"bedeutung": "erheben, auferlegen",
+"n": 215,
+"beispiele": [
+[
+"los intereses que me [[impuso]] duplicaban el préstamo",
+"die Zinsen, die er mir [[auferlegte]], verdoppelten den Kredit"
+]
+]
+},
+{
+"wort": "incredulidad f",
+"bedeutung": "Unglaube",
+"n": 216,
+"beispiele": [
+[
+"El estupor y la [[incredulidad]] se apoderan de los alumnos.",
+"Verblüffung und [[Unglaube]] erfassen die Studenten."
+]
+]
+},
+{
+"wort": "incriminar",
+"bedeutung": "anschuldigen",
+"n": 217,
+"beispiele": [
+[
+"Las pruebas lo [[incriminan]], sí.",
+"Die Beweise [[beschuldigen]] ihn, ja."
+]
+]
+},
+{
+"wort": "indagación f",
+"bedeutung": "Nachforschung",
+"n": 218,
+"beispiele": [
+[
+"mientras yo hago las [[indagaciones]] pertinentes",
+"während ich die sachbezogenen [[Nachforschungen]] anstelle"
+]
+]
+},
+{
+"wort": "ingresos m pl",
+"bedeutung": "Einkünfte",
+"n": 219,
+"beispiele": [
+[
+"Mi marido no recibía [[ingresos]] desde hacía casi dos años.",
+"Mein Mann hatte seit fast zwei Jahren keine [[Einkünfte]]."
+]
+]
+},
+{
+"wort": "insolación f",
+"bedeutung": "Hitzschlag",
+"n": 220,
+"beispiele": [
+[
+"pensaron que se trataría de la víctima de una [[insolación]]",
+"dachten, es handle sich um das Opfer eines [[Hitzschlags]]"
+]
+]
+},
+{
+"wort": "insolencia f",
+"bedeutung": "Unverschämtheit",
+"n": 221,
+"beispiele": [
+[
+"sufrió los desplantes y las [[insolencias]] de Pedro",
+"er musste Pedros Dreistigkeiten und [[Unverschämtheiten]] ertragen"
+]
+]
+},
+{
+"wort": "insulto m",
+"bedeutung": "Beschimpfung",
+"n": 222,
+"beispiele": [
+[
+"Gritos, [[insultos]], llamadas...",
+"Geschrei, [[Beschimpfungen]], Anrufe …"
+]
+]
+},
+{
+"wort": "intereses m pl",
+"bedeutung": "Zinsen",
+"n": 223,
+"beispiele": [
+[
+"Pide [[intereses]], como todo comerciante.",
+"Er verlangt [[Zinsen]], wie jeder Händler."
+]
+]
+},
+{
+"wort": "intrigado",
+"bedeutung": "neugierig",
+"n": 224,
+"beispiele": [
+[
+"—preguntó [[intrigada]] la inspectora.",
+"fragte die Inspektorin [[neugierig]]."
+]
+]
+},
+{
+"wort": "intuir irr",
+"bedeutung": "ahnen",
+"n": 225,
+"beispiele": [
+[
+"—pregunta Leonardo, [[intuyendo]] la respuesta.",
+"fragt Leonardo, der die Antwort [[ahnt]]."
+]
+]
+},
+{
+"wort": "ir irr al grano",
+"bedeutung": "zur Sache kommen",
+"n": 226,
+"umg": true,
+"beispiele": [
+[
+"Palacios decidió [[ir al grano]] y dejarse de rodeos.",
+"Palacios beschloss, [[zur Sache zu kommen]] und nicht länger herumzudrucksen."
+]
+]
+},
+{
+"wort": "irse irr la mano",
+"bedeutung": "hier: schlagen",
+"n": 227,
+"beispiele": [
+[
+"por lo visto [[se le fue la mano]]",
+"offenbar hat er [[zugeschlagen]]"
+]
+]
+},
+{
+"wort": "juez m de instrucción",
+"bedeutung": "Untersuchungsrichter",
+"n": 228,
+"beispiele": [
+[
+"justo antes de que llegara el [[juez de instrucción]]",
+"kurz bevor der [[Untersuchungsrichter]] eintraf"
+]
+]
+},
+{
+"wort": "ladrido m",
+"bedeutung": "Bellen",
+"n": 229,
+"beispiele": [
+[
+"De inmediato se escuchan unos furiosos [[ladridos]].",
+"Sofort hört man wütendes [[Bellen]]."
+]
+]
+},
+{
+"wort": "latir",
+"bedeutung": "schlagen (Herz)",
+"n": 230,
+"beispiele": [
+[
+"siente cómo el corazón le [[late]] a toda velocidad",
+"spürt, wie sein Herz rasend schnell [[schlägt]]"
+],
+[
+"El corazón le [[late]] muy deprisa.",
+"Sein Herz [[schlägt]] sehr schnell."
+]
+]
+},
+{
+"wort": "levantar el cadáver",
+"bedeutung": "den Leichnam obduzieren",
+"n": 231,
+"beispiele": [
+[
+"voy a dar orden de que [[levanten el cadáver]] en cuanto ustedes terminen",
+"ich ordne an, dass man [[den Leichnam obduziert]], sobald Sie fertig sind"
+]
+]
+},
+{
+"wort": "llevarse un buen pico",
+"bedeutung": "eine ganze Menge verdienen",
+"n": 232,
+"umg": true,
+"beispiele": [
+[
+"[[Se lleva un buen pico]] de todo esto.",
+"Er [[verdient]] an all dem [[eine ganze Menge]]."
+]
+]
+},
+{
+"wort": "lienzo m",
+"bedeutung": "Gemälde",
+"n": 233,
+"beispiele": [
+[
+"se dirige hacia un [[lienzo]] en el que aparece retratado el Malecón",
+"geht zu einem [[Gemälde]], auf dem der Malecón abgebildet ist"
+]
+]
+},
+{
+"wort": "lío m de faldas",
+"bedeutung": "Affäre",
+"n": 234,
+"umg": true,
+"beispiele": [
+[
+"Nada, un [[lío de faldas]] en Madrid.",
+"Nichts weiter, eine [[Affäre]] in Madrid."
+]
+]
+},
+{
+"wort": "litoral m",
+"bedeutung": "Küste",
+"n": 235,
+"beispiele": [
+[
+"una carretera que bordea el [[litoral]]",
+"eine Straße, die an der [[Küste]] entlangführt"
+]
+]
+},
+{
+"wort": "lívido",
+"bedeutung": "blass",
+"n": 236,
+"beispiele": [
+[
+"—pregunta Porfirio, con el rostro [[lívido]].",
+"fragt Porfirio mit [[blassem]] Gesicht."
+]
+]
+},
+{
+"wort": "llegar a las manos",
+"bedeutung": "handgreiflich werden",
+"n": 237,
+"umg": true,
+"beispiele": [
+[
+"Casi [[llegan a las manos]].",
+"Fast [[wurden]] sie [[handgreiflich]]."
+]
+]
+},
+{
+"wort": "loncha f",
+"bedeutung": "Scheibe",
+"n": 238,
+"beispiele": [
+[
+"con la última [[loncha]] de jamón york",
+"mit der letzten [[Scheibe]] Kochschinken"
+]
+]
+},
+{
+"wort": "majo",
+"bedeutung": "nett, gut aussehend",
+"n": 239,
+"beispiele": [
+[
+"¡Qué triste, con lo [[majo]] que era!",
+"Wie traurig, er war so [[nett]]!"
+]
+]
+},
+{
+"wort": "mala pécora f",
+"bedeutung": "Schlampe",
+"n": 240,
+"umg": true,
+"beispiele": [
+[
+"¿Cuál voy a tener de esa [[mala pécora]]?",
+"Welche soll ich schon von dieser [[Schlampe]] haben?"
+]
+]
+},
+{
+"wort": "mamarracho m",
+"bedeutung": "Idiot, Flasche",
+"n": 241,
+"umg": true,
+"beispiele": [
+[
+"—¡Ni se te ocurra tocarla, [[mamarracho]], o disparo!",
+"„Wag es nicht, sie anzufassen, du [[Idiot]], sonst schieße ich!“"
+]
+]
+},
+{
+"wort": "mampara f",
+"bedeutung": "Glastür",
+"n": 242,
+"beispiele": [
+[
+"el sofá nuevo del salón, la [[mampara]] de la ducha",
+"das neue Sofa im Wohnzimmer, die [[Glastür]] der Dusche"
+]
+]
+},
+{
+"wort": "mandar a freír espárragos",
+"bedeutung": "zum Teufel jagen",
+"n": 243,
+"umg": true,
+"beispiele": [
+[
+"Mi amigo le [[mandó a freír espárragos]].",
+"Mein Freund hat ihn [[zum Teufel gejagt]]."
+]
+]
+},
+{
+"wort": "mano f de pintura",
+"bedeutung": "Farbanstrich",
+"n": 244,
+"beispiele": [
+[
+"al que hace falta una [[mano de pintura]]",
+"dem ein [[Farbanstrich]] fehlt"
+]
+]
+},
+{
+"wort": "mansión f",
+"bedeutung": "Villa",
+"n": 245,
+"beispiele": [
+[
+"Ya le he echado el ojo a una [[mansión]] en El Vedado.",
+"Ich habe schon eine [[Villa]] im Vedado ins Auge gefasst."
+],
+[
+"frente a la puerta de una llamativa [[mansión]]",
+"vor dem Tor einer auffälligen [[Villa]]"
+]
+]
+},
+{
+"wort": "manzana f",
+"bedeutung": "hier: (Häuser-)Block",
+"n": 246,
+"beispiele": [
+[
+"El sonido del claxon se escuchaba desde varias [[manzanas]] a la redonda.",
+"Das Hupen war mehrere [[Blocks]] im Umkreis zu hören."
+]
+]
+},
+{
+"wort": "Marte m",
+"bedeutung": "Mars",
+"n": 247,
+"beispiele": [
+[
+"—¡No sé! En la Luna, o en [[Marte]] —responde él.",
+"„Keine Ahnung! Auf dem Mond oder auf dem [[Mars]]“, antwortet er."
+]
+]
+},
+{
+"wort": "masticar",
+"bedeutung": "kauen",
+"n": 248,
+"bildlich": true,
+"beispiele": [
+[
+"«Empresario»... dicho así, despacio y [[masticando]] cada sílaba",
+"„Unternehmer“ … so gesagt, langsam und jede Silbe [[kauend]]"
+]
+]
+},
+{
+"wort": "médico/a m/f forense",
+"bedeutung": "Gerichtsmediziner(in)",
+"n": 249,
+"beispiele": [
+[
+"La doctora Corbacho, [[médica forense]], les espera en la sala de autopsias.",
+"Doktor Corbacho, die [[Gerichtsmedizinerin]], erwartet sie im Obduktionssaal."
+]
+]
+},
+{
+"wort": "mencionar",
+"bedeutung": "erwähnen",
+"n": 250,
+"beispiele": [
+[
+"nadie antes había [[mencionado]] el nombre de Nicolás Serrano",
+"niemand hatte vorher den Namen Nicolás Serrano [[erwähnt]]"
+]
+]
+},
+{
+"wort": "merienda f",
+"bedeutung": "Pausenbrot",
+"n": 251,
+"beispiele": [
+[
+"ya sabes cómo es la niña con la [[merienda]]",
+"du weißt ja, wie die Kleine mit ihrem [[Pausenbrot]] ist"
+]
+]
+},
+{
+"wort": "mestizo",
+"bedeutung": "mischrassig",
+"n": 252,
+"beispiele": [
+[
+"alto y delgado, de origen [[mestizo]]",
+"groß und schlank, von [[mischrassiger]] Herkunft"
+]
+]
+},
+{
+"wort": "mirador m",
+"bedeutung": "Aussichtspunkt",
+"n": 253,
+"beispiele": [
+[
+"mientras caminan hacia un [[mirador]] desde el que hay una magnífica vista al Pico Viejo",
+"während sie zu einem [[Aussichtspunkt]] gehen, von dem man eine herrliche Sicht auf den Pico Viejo hat"
+]
+]
+},
+{
+"wort": "montura f",
+"bedeutung": "Fassung, Gestell",
+"n": 254,
+"beispiele": [
+[
+"con una perilla y gafas de [[montura]] dorada",
+"mit Kinnbart und einer Brille mit goldener [[Fassung]]"
+],
+[
+"una chica con pelo corto y gafas con [[montura]] de color rosa",
+"ein Mädchen mit kurzen Haaren und einer Brille mit rosa [[Gestell]]"
+]
+]
+},
+{
+"wort": "movida f",
+"bedeutung": "hier: Szene",
+"n": 255,
+"beispiele": [
+[
+"allí hay una gran [[movida]] gay",
+"dort gibt es eine große Schwulen[[szene]]"
+]
+]
+},
+{
+"wort": "mueca f",
+"bedeutung": "hier: Grinsen",
+"n": 256,
+"beispiele": [
+[
+"termina con [[mueca]] de disgusto",
+"sagt er mit einem missmutigen [[Grinsen]]"
+]
+]
+},
+{
+"wort": "multa f de tráfico",
+"bedeutung": "Bußgeld",
+"n": 257,
+"beispiele": [
+[
+"Lo único que me faltaba ahora era una [[multa de tráfico]].",
+"Das Einzige, was mir jetzt noch fehlte, war ein [[Bußgeld]]."
+]
+]
+},
+{
+"wort": "mural m",
+"bedeutung": "Wandbild",
+"n": 258,
+"beispiele": [
+[
+"junto al quiosco, enfrente del [[mural]] del Che Guevara",
+"neben dem Kiosk, gegenüber dem [[Wandbild]] von Che Guevara"
+]
+]
+},
+{
+"wort": "musitar",
+"bedeutung": "flüstern, murmeln",
+"n": 259,
+"beispiele": [
+[
+"—Exijo un abogado... —[[musita]] el profesor Rovira.",
+"„Ich verlange einen Anwalt …“, [[murmelt]] Professor Rovira."
+]
+]
+},
+{
+"wort": "ni caso",
+"bedeutung": "keine Reaktion",
+"n": 260,
+"umg": true,
+"beispiele": [
+[
+"—Iván, levanta la vista del móvil. [[Ni caso]].",
+"„Iván, schau vom Handy auf.“ [[Keine Reaktion]]."
+]
+]
+},
+{
+"wort": "no dejar cabos sueltos",
+"bedeutung": "keinen Punkt außer Acht lassen",
+"n": 261,
+"umg": true,
+"beispiele": [
+[
+"no quería [[dejar cabos sueltos]] que les pudieran ayudar en la investigación",
+"sie wollte [[keinen Punkt außer Acht lassen]], der ihnen bei den Ermittlungen helfen könnte"
+]
+]
+},
+{
+"wort": "no estar irr en buenos términos",
+"bedeutung": "sich nicht gut verstehen",
+"n": 262,
+"umg": true,
+"beispiele": [
+[
+"usted y la víctima [[no estaban en los mejores términos]]",
+"Sie und das Opfer [[verstanden sich nicht]] besonders [[gut]]"
+]
+]
+},
+{
+"wort": "no tragar a alguien",
+"bedeutung": "jmd. nicht ertragen",
+"n": 263,
+"beispiele": [
+[
+"Jordi [[no le tragaba]], no le podía ni ver.",
+"Jordi [[konnte ihn nicht ertragen]], er konnte ihn nicht mal sehen."
+]
+]
+},
+{
+"wort": "no van por ahí los tiros",
+"bedeutung": "die Sache verhält sich anders",
+"n": 264,
+"umg": true,
+"beispiele": [
+[
+"te estás equivocando de pista y [[por ahí no van los tiros]]",
+"du bist auf der falschen Spur, [[die Sache verhält sich anders]]"
+]
+]
+},
+{
+"wort": "nómina f",
+"bedeutung": "Gehalt",
+"n": 265,
+"beispiele": [
+[
+"tengo que empezar a pagar las [[nóminas]]",
+"ich muss anfangen, die [[Gehälter]] zu zahlen"
+]
+]
+},
+{
+"wort": "obcecarse",
+"bedeutung": "verblendet sein",
+"n": 266,
+"beispiele": [
+[
+"Ella [[se obceca]] en recordarme el pasado.",
+"Sie [[ist]] so [[verblendet]], dass sie mir ständig die Vergangenheit vorhält."
+]
+]
+},
+{
+"wort": "ojeras f pl",
+"bedeutung": "Augenringe",
+"n": 267,
+"beispiele": [
+[
+"muestra aspecto de estar agotado, con marcadas [[ojeras]]",
+"wirkt erschöpft, mit deutlichen [[Augenringen]]"
+]
+]
+},
+{
+"wort": "oleaje m",
+"bedeutung": "Wellengang",
+"n": 268,
+"beispiele": [
+[
+"playas de aguas de gran [[oleaje]]",
+"Strände mit starkem [[Wellengang]]"
+]
+]
+},
+{
+"wort": "olisquear",
+"bedeutung": "schnüffeln",
+"n": 269,
+"beispiele": [
+[
+"En un cubo de basura [[olisquea]] un perro negro.",
+"An einem Mülleimer [[schnüffelt]] ein schwarzer Hund."
+]
+]
+},
+{
+"wort": "orden f judicial",
+"bedeutung": "Gerichtsbeschluss",
+"n": 270,
+"beispiele": [
+[
+"no sería tan fácil conseguirlas sin una [[orden judicial]]",
+"ohne [[Gerichtsbeschluss]] wäre es nicht so leicht, sie zu bekommen"
+]
+]
+},
+{
+"wort": "orondo",
+"bedeutung": "dickbäuchig",
+"n": 271,
+"beispiele": [
+[
+"un hombre de unos cincuenta años, calvo, [[orondo]] y bonachón",
+"ein Mann um die fünfzig, kahl, [[dickbäuchig]] und gutmütig"
+]
+]
+},
+{
+"wort": "oyente m/f",
+"bedeutung": "Zuhörer(in)",
+"n": 272,
+"beispiele": [
+[
+"pero asistía como [[oyente]]",
+"aber ich nahm als [[Zuhörer]] teil"
+]
+]
+},
+{
+"wort": "paja f",
+"bedeutung": "Stroh",
+"n": 273,
+"beispiele": [
+[
+"con camisa y pantalón blancos y un sombrero de [[paja]]",
+"in weißem Hemd und weißer Hose und mit einem [[Stroh]]hut"
+]
+]
+},
+{
+"wort": "¡Pal carajo!",
+"bedeutung": "Verdammt nochmal!",
+"n": 274,
+"umg": true,
+"beispiele": [
+[
+"—¡[[Pal carajo]], tú no cambiarás nunca!",
+"„[[Verdammt nochmal]], du wirst dich nie ändern!“"
+]
+]
+},
+{
+"wort": "palanca f",
+"bedeutung": "Schaltknüppel",
+"n": 275,
+"beispiele": [
+[
+"la [[palanca]] no se maneja bien",
+"der [[Schaltknüppel]] lässt sich schlecht bedienen"
+]
+]
+},
+{
+"wort": "palmear",
+"bedeutung": "klopfen, tätscheln",
+"n": 276,
+"beispiele": [
+[
+"dándole un abrazo y [[palmeándole]] la espalda",
+"umarmt ihn und [[klopft]] ihm auf den Rücken"
+]
+]
+},
+{
+"wort": "parabrisas m",
+"bedeutung": "Windschutzscheibe",
+"n": 277,
+"beispiele": [
+[
+"¡Qué sucio está el [[parabrisas]] del coche!",
+"Wie schmutzig die [[Windschutzscheibe]] ist!"
+]
+]
+},
+{
+"wort": "parar el carro",
+"bedeutung": "halblang machen",
+"n": 278,
+"umg": true,
+"beispiele": [
+[
+"—[[Para el carro]], para.",
+"„[[Mach mal halblang]].“"
+],
+[
+"—Alto ahí, papá, [[para el carro]].",
+"„Halt, Papa, [[mach mal halblang]].“"
+]
+]
+},
+{
+"wort": "partir",
+"bedeutung": "brechen",
+"n": 279,
+"beispiele": [
+[
+"un objeto contundente, que le [[partió]] igualmente la mandíbula",
+"ein stumpfer Gegenstand, der ihm ebenfalls den Kiefer [[brach]]"
+]
+]
+},
+{
+"wort": "pasarlas canutas",
+"bedeutung": "allerhand durchmachen",
+"n": 280,
+"beispiele": [
+[
+"Aquí nuestro pueblo estaba [[pasándolas canutas]].",
+"Hier [[machte]] unser Volk [[allerhand durch]]."
+]
+]
+},
+{
+"wort": "pastor m alemán",
+"bedeutung": "Schäferhund",
+"n": 281,
+"beispiele": [
+[
+"Un gran [[pastor alemán]] viene corriendo a la puerta.",
+"Ein großer [[Schäferhund]] kommt zur Tür gerannt."
+]
+]
+},
+{
+"wort": "pauta f",
+"bedeutung": "Grundsatz",
+"n": 282,
+"beispiele": [
+[
+"Motivados por las [[pautas]] de la inspectora Palacios",
+"Angetrieben von den [[Grundsätzen]] der Inspektorin Palacios"
+]
+]
+},
+{
+"wort": "pedir irr peras al olmo",
+"bedeutung": "etw. Unmögliches verlangen",
+"n": 283,
+"bildlich": true,
+"beispiele": [
+[
+"No [[pidas peras al olmo]].",
+"[[Verlang nichts Unmögliches]]."
+]
+]
+},
+{
+"wort": "pedregoso",
+"bedeutung": "steinig",
+"n": 284,
+"beispiele": [
+[
+"echa a andar por una cuesta [[pedregosa]]",
+"geht einen [[steinigen]] Hang hinauf"
+]
+]
+},
+{
+"wort": "perilla f",
+"bedeutung": "Kinnbart",
+"n": 285,
+"beispiele": [
+[
+"un hombre ancho de hombros, con una [[perilla]]",
+"ein breitschultriger Mann mit [[Kinnbart]]"
+],
+[
+"un camarero, calvo y con [[perilla]]",
+"ein Kellner, kahl und mit [[Kinnbart]]"
+]
+]
+},
+{
+"wort": "pertenencias f pl",
+"bedeutung": "Habseligkeiten",
+"n": 286,
+"beispiele": [
+[
+"¿Ha echado algo más en falta entre las [[pertenencias]] de su esposo?",
+"Vermissen Sie sonst etwas unter den [[Habseligkeiten]] Ihres Mannes?"
+]
+]
+},
+{
+"wort": "pertinente",
+"bedeutung": "sachbezogen",
+"n": 287,
+"beispiele": [
+[
+"mientras yo hago las indagaciones [[pertinentes]]",
+"während ich die [[sachbezogenen]] Nachforschungen anstelle"
+]
+]
+},
+{
+"wort": "pesado",
+"bedeutung": "hier: lästig",
+"n": 288,
+"beispiele": [
+[
+"«Qué [[pesado]]», piensa, pero entonces ve que es Maribel.",
+"„Wie [[lästig]]“, denkt er, aber dann sieht er, dass es Maribel ist."
+]
+]
+},
+{
+"wort": "pésame m",
+"bedeutung": "Beileid",
+"n": 289,
+"beispiele": [
+[
+"Nuestro más sentido [[pésame]].",
+"Unser aufrichtiges [[Beileid]]."
+]
+]
+},
+{
+"wort": "picado",
+"bedeutung": "eingeschnappt",
+"n": 290,
+"beispiele": [
+[
+"—pregunta Selena, [[picada]].",
+"fragt Selena [[eingeschnappt]]."
+]
+]
+},
+{
+"wort": "pista f",
+"bedeutung": "hier: Spur",
+"n": 291,
+"beispiele": [
+[
+"¿Hay algún tipo de [[pista]]?",
+"Gibt es irgendeine [[Spur]]?"
+]
+]
+},
+{
+"wort": "plasta m/f",
+"bedeutung": "Nervensäge",
+"n": 292,
+"umg": true,
+"beispiele": [
+[
+"¡Uy, qué tío más [[plasta]]!",
+"Oh, was für eine [[Nervensäge]]!"
+]
+]
+},
+{
+"wort": "plazo m",
+"bedeutung": "Frist",
+"n": 293,
+"beispiele": [
+[
+"[[plazos]] imposibles de cumplir",
+"[[Fristen]], die unmöglich einzuhalten sind"
+]
+]
+},
+{
+"wort": "PNR f (Policía Nacional Revolucionaria)",
+"bedeutung": "Polizei Kubas",
+"n": 294,
+"beispiele": [
+[
+"Lo sé, y por eso no confío en la [[PNR]].",
+"Ich weiß, und deshalb traue ich der [[Polizei Kubas]] nicht."
+]
+]
+},
+{
+"wort": "poblado",
+"bedeutung": "hier: dicht",
+"n": 295,
+"beispiele": [
+[
+"con una larga melena y [[poblada]] barba",
+"mit langer Mähne und [[dichtem]] Bart"
+]
+]
+},
+{
+"wort": "policía f fronteriza",
+"bedeutung": "Grenzpolizei",
+"n": 296,
+"beispiele": [
+[
+"Avisa a la [[policía fronteriza]] y a la aduana.",
+"Verständige die [[Grenzpolizei]] und den Zoll."
+]
+]
+},
+{
+"wort": "poner irr tierra de por medio",
+"bedeutung": "das Weite suchen",
+"n": 297,
+"umg": true,
+"beispiele": [
+[
+"[[pusiste tierra de por medio]] y me dejaste a mí como dueño",
+"du hast [[das Weite gesucht]] und mich als Besitzer zurückgelassen"
+]
+]
+},
+{
+"wort": "predilecto",
+"bedeutung": "Lieblings-",
+"n": 298,
+"beispiele": [
+[
+"Pedro era el discípulo [[predilecto]] del catedrático Andrés Rovira.",
+"Pedro war der [[Lieblings]]schüler von Professor Andrés Rovira."
+]
+]
+},
+{
+"wort": "presionar",
+"bedeutung": "Druck machen",
+"n": 299,
+"beispiele": [
+[
+"un día, o menos, si [[presionaban]] al laboratorio",
+"einen Tag oder weniger, wenn sie dem Labor [[Druck machten]]"
+]
+]
+},
+{
+"wort": "prestamista m/f",
+"bedeutung": "Geldverleiher",
+"n": 300,
+"beispiele": [
+[
+"recurren a un [[prestamista]] muy conocido en el sector",
+"greifen auf einen in der Branche sehr bekannten [[Geldverleiher]] zurück"
+]
+]
+},
+{
+"wort": "presumir de",
+"bedeutung": "mit etw. werben, angeben",
+"n": 301,
+"beispiele": [
+[
+"un pequeño restaurante que [[presume de]] «comidas caseras»",
+"ein kleines Restaurant, das [[mit]] „Hausmannskost“ [[wirbt]]"
+]
+]
+},
+{
+"wort": "prorrumpir",
+"bedeutung": "herausplatzen",
+"n": 302,
+"beispiele": [
+[
+"Selena queda callada un momento y, de repente, [[prorrumpe]]",
+"Selena schweigt einen Moment und [[platzt]] dann plötzlich [[heraus]]"
+]
+]
+},
+{
+"wort": "prostíbulo m",
+"bedeutung": "Bordell",
+"n": 303,
+"beispiele": [
+[
+"servir como casino y [[prostíbulo]] para los norteamericanos",
+"als Kasino und [[Bordell]] für die Nordamerikaner dienen"
+]
+]
+},
+{
+"wort": "proveedor m",
+"bedeutung": "Lieferant",
+"n": 304,
+"beispiele": [
+[
+"los clientes, los [[proveedores]], el material...",
+"die Kunden, die [[Lieferanten]], das Material …"
+]
+]
+},
+{
+"wort": "prueba f dactilar",
+"bedeutung": "Fingerabdruck",
+"n": 305,
+"beispiele": [
+[
+"las [[pruebas dactilares]] y el informe forense todavía tardarían",
+"die [[Fingerabdrücke]] und der Bericht der Gerichtsmedizin würden noch dauern"
+]
+]
+},
+{
+"wort": "puro m",
+"bedeutung": "Zigarre",
+"n": 306,
+"beispiele": [
+[
+"Viene fumando un [[puro]], con mucha calma.",
+"Er kommt ganz gemächlich, eine [[Zigarre]] rauchend."
+]
+]
+},
+{
+"wort": "quiebra f",
+"bedeutung": "Bankrott",
+"n": 307,
+"beispiele": [
+[
+"y de ahí a la [[quiebra]] no había más que unos pocos pasos",
+"und von da bis zum [[Bankrott]] waren es nur wenige Schritte"
+]
+]
+},
+{
+"wort": "radiante",
+"bedeutung": "strahlend",
+"n": 308,
+"beispiele": [
+[
+"Un sol [[radiante]] brilla sobre La Habana.",
+"Eine [[strahlende]] Sonne scheint über Havanna."
+]
+]
+},
+{
+"wort": "raído",
+"bedeutung": "abgeschabt",
+"n": 309,
+"beispiele": [
+[
+"una bandera arcoíris algo [[raída]]",
+"eine etwas [[abgeschabte]] Regenbogenfahne"
+]
+]
+},
+{
+"wort": "rascarse",
+"bedeutung": "sich kratzen",
+"n": 310,
+"beispiele": [
+[
+"se queda pensativo, [[rascándose]] la nuca",
+"bleibt nachdenklich und [[kratzt sich]] im Nacken"
+]
+]
+},
+{
+"wort": "rastrear",
+"bedeutung": "durchsuchen",
+"n": 311,
+"beispiele": [
+[
+"Leonardo [[rastrea]] el piso concienzudamente en busca de pistas.",
+"Leonardo [[durchsucht]] die Wohnung gründlich nach Spuren."
+]
+]
+},
+{
+"wort": "recaer irr",
+"bedeutung": "fallen",
+"n": 312,
+"beispiele": [
+[
+"hacía [[recaer]] las sospechas sobre Nicolás Serrano",
+"ließ den Verdacht auf Nicolás Serrano [[fallen]]"
+]
+]
+},
+{
+"wort": "reconcomer",
+"bedeutung": "wurmen, ärgern",
+"n": 313,
+"beispiele": [
+[
+"¿Qué es lo que te [[reconcome]]?",
+"Was [[wurmt]] dich?"
+]
+]
+},
+{
+"wort": "redada f",
+"bedeutung": "Razzia",
+"n": 314,
+"beispiele": [
+[
+"ya hemos tenido que hacer más de una [[redada]]",
+"wir mussten schon mehr als eine [[Razzia]] machen"
+]
+]
+},
+{
+"wort": "reflotar",
+"bedeutung": "hier: wieder auf die Beine stellen",
+"n": 315,
+"beispiele": [
+[
+"Gastó todo el préstamo para [[reflotar]] la fábrica.",
+"Er gab den ganzen Kredit aus, um die Fabrik [[wieder auf die Beine zu stellen]]."
+]
+]
+},
+{
+"wort": "reír irr a carcajadas",
+"bedeutung": "in Gelächter ausbrechen",
+"n": 316,
+"bildlich": true,
+"beispiele": [
+[
+"pregunta Ulpiano y echa a [[reír a carcajadas]]",
+"fragt Ulpiano und [[bricht in Gelächter aus]]"
+]
+]
+},
+{
+"wort": "rencilla f",
+"bedeutung": "Streit",
+"n": 317,
+"beispiele": [
+[
+"Muchos de ellos arrastraban [[rencillas]] y enfados por ciertas cuentas sin aclarar.",
+"Viele von ihnen trugen [[Streit]] und Ärger wegen ungeklärter Rechnungen mit sich herum."
+]
+]
+},
+{
+"wort": "rencor m",
+"bedeutung": "Groll",
+"n": 318,
+"beispiele": [
+[
+"La vida es muy corta y no tienen sentido esos [[rencores]].",
+"Das Leben ist sehr kurz, und dieser [[Groll]] hat keinen Sinn."
+]
+]
+},
+{
+"wort": "reñir irr",
+"bedeutung": "streiten",
+"n": 319,
+"beispiele": [
+[
+"pero [[riñeron]] y Pedro fue expulsado del taller",
+"aber sie [[stritten]] sich, und Pedro wurde aus dem Kurs ausgeschlossen"
+]
+]
+},
+{
+"wort": "repleto",
+"bedeutung": "voll",
+"n": 320,
+"beispiele": [
+[
+"estanterías [[repletas]] de libros hasta el techo",
+"Regale bis zur Decke [[voll]] mit Büchern"
+]
+]
+},
+{
+"wort": "reprensivo",
+"bedeutung": "tadelnd",
+"n": 321,
+"beispiele": [
+[
+"ante la mirada [[reprensiva]] de los agentes",
+"unter dem [[tadelnden]] Blick der Polizisten"
+]
+]
+},
+{
+"wort": "reproche m",
+"bedeutung": "Vorwurf",
+"n": 322,
+"beispiele": [
+[
+"decide no contarle nada sobre los [[reproches]] de Fernando",
+"beschließt, ihr nichts von Fernandos [[Vorwürfen]] zu erzählen"
+]
+]
+},
+{
+"wort": "retador",
+"bedeutung": "herausfordernd",
+"n": 323,
+"beispiele": [
+[
+"responde, con mirada [[retadora]]",
+"antwortet er mit [[herausforderndem]] Blick"
+]
+]
+},
+{
+"wort": "retraído",
+"bedeutung": "schüchtern",
+"n": 324,
+"beispiele": [
+[
+"Mi hijo era una persona muy reservada, muy [[retraída]].",
+"Mein Sohn war ein sehr verschlossener, sehr [[schüchterner]] Mensch."
+]
+]
+},
+{
+"wort": "retrato m robot",
+"bedeutung": "Phantombild",
+"n": 325,
+"beispiele": [
+[
+"para intentar realizar un [[retrato robot]]",
+"um zu versuchen, ein [[Phantombild]] zu erstellen"
+]
+]
+},
+{
+"wort": "retroceder",
+"bedeutung": "zurückführen",
+"n": 326
+},
+{
+"wort": "retumbar",
+"bedeutung": "dröhnen",
+"n": 327,
+"beispiele": [
+[
+"[[retumbaban]] las sirenas de los coches de los agentes",
+"die Sirenen der Polizeiwagen [[dröhnten]]"
+]
+]
+},
+{
+"wort": "risueño",
+"bedeutung": "heiter, vergnügt",
+"n": 328,
+"beispiele": [
+[
+"—pregunta [[risueño]] Miguel.",
+"fragt Miguel [[vergnügt]]."
+]
+]
+},
+{
+"wort": "ronco",
+"bedeutung": "heiser, rau",
+"n": 329,
+"beispiele": [
+[
+"—Adelante —responde una voz [[ronca]].",
+"„Herein“, antwortet eine [[heisere]] Stimme."
+],
+[
+"de repente, una voz [[ronca]] les interrumpe",
+"plötzlich unterbricht sie eine [[heisere]] Stimme"
+]
+]
+},
+{
+"wort": "rondar",
+"bedeutung": "kreisen, schwirren",
+"n": 330,
+"beispiele": [
+[
+"la duda le [[rondó]] la mente más de una vez",
+"der Zweifel [[schwirrte]] ihr mehr als einmal durch den Kopf"
+]
+]
+},
+{
+"wort": "rostro m",
+"bedeutung": "Gesicht",
+"n": 331,
+"beispiele": [
+[
+"en sus [[rostros]] se refleja la incredulidad",
+"auf ihren [[Gesichtern]] spiegelt sich Unglaube"
+]
+]
+},
+{
+"wort": "saldar",
+"bedeutung": "begleichen",
+"n": 332,
+"beispiele": [
+[
+"Cobré la herencia y [[saldé]] mi deuda.",
+"Ich bekam die Erbschaft und [[beglich]] meine Schulden."
+]
+]
+},
+{
+"wort": "seguir irr en sus trece",
+"bedeutung": "auf seinem Standpunkt beharren",
+"n": 333,
+"umg": true,
+"beispiele": [
+[
+"Ella [[seguía en sus trece]].",
+"Sie [[beharrte auf ihrem Standpunkt]]."
+]
+]
+},
+{
+"wort": "sentar la cabeza",
+"bedeutung": "zur Vernunft kommen",
+"n": 334,
+"bildlich": true,
+"beispiele": [
+[
+"pensaba que habías [[sentado la cabeza]]",
+"ich dachte, du wärst [[zur Vernunft gekommen]]"
+]
+]
+},
+{
+"wort": "serenata f",
+"bedeutung": "Serenade, Nachtmusik",
+"n": 335,
+"beispiele": [
+[
+"cuando ibas con la guitarra dándole [[serenatas]]",
+"als du mit der Gitarre losgezogen bist und ihr [[Serenaden]] gebracht hast"
+]
+]
+},
+{
+"wort": "sien f",
+"bedeutung": "Schläfe",
+"n": 336,
+"beispiele": [
+[
+"Una bala acababa de atravesarme la [[sien]].",
+"Eine Kugel hatte mir gerade die [[Schläfe]] durchschlagen."
+]
+]
+},
+{
+"wort": "sin dilación",
+"bedeutung": "unverzüglich",
+"n": 337,
+"beispiele": [
+[
+"—afirmó la forense [[sin]] más [[dilación]].",
+"sagte die Gerichtsmedizinerin [[unverzüglich]]."
+]
+]
+},
+{
+"wort": "soberbio",
+"bedeutung": "eitel, hochmütig",
+"n": 338,
+"beispiele": [
+[
+"un poco [[soberbio]] en el trato",
+"im Umgang etwas [[hochmütig]]"
+]
+]
+},
+{
+"wort": "solar m",
+"bedeutung": "Baugelände",
+"n": 339,
+"beispiele": [
+[
+"Cerca de allí está el [[solar]] donde él jugaba a pelota con Fernando.",
+"In der Nähe liegt das [[Baugelände]], wo er mit Fernando Ball spielte."
+]
+]
+},
+{
+"wort": "sollozar",
+"bedeutung": "schluchzen",
+"n": 340,
+"beispiele": [
+[
+"Andrés Rovira, hablando consigo mismo, [[solloza]]",
+"Andrés Rovira [[schluchzt]] und spricht mit sich selbst"
+]
+]
+},
+{
+"wort": "solomillo m",
+"bedeutung": "Steak",
+"n": 341,
+"beispiele": [
+[
+"Me pidió que le pasaran dos veces más el [[solomillo]].",
+"Er bat darum, das [[Steak]] noch zweimal nachzubraten."
+]
+]
+},
+{
+"wort": "sonrisa f de oreja a oreja",
+"bedeutung": "Lachen wie ein Honigkuchenpferd",
+"n": 342,
+"beispiele": [
+[
+"comenta Miguel Alvarado con una [[sonrisa de oreja a oreja]]",
+"sagt Miguel Alvarado und [[lacht wie ein Honigkuchenpferd]]"
+]
+]
+},
+{
+"wort": "sospechoso m",
+"bedeutung": "Verdächtiger",
+"n": 343,
+"beispiele": [
+[
+"Pero no dejas de ser un [[sospechoso]].",
+"Aber du bleibst trotzdem ein [[Verdächtiger]]."
+]
+]
+},
+{
+"wort": "sostener(se) irr",
+"bedeutung": "halten",
+"n": 344,
+"beispiele": [
+[
+"—dice el detective, [[sosteniendo]] un envoltorio de plástico.",
+"sagt der Detektiv und [[hält]] eine Plastikverpackung hoch."
+]
+]
+},
+{
+"wort": "sugerir irr",
+"bedeutung": "andeuten, vorschlagen",
+"n": 345,
+"beispiele": [
+[
+"—[[sugirió]] Palacios.",
+"[[deutete]] Palacios [[an]]."
+]
+]
+},
+{
+"wort": "suministrar",
+"bedeutung": "liefern",
+"n": 346,
+"beispiele": [
+[
+"la compañía telefónica les [[suministra]] los datos de las últimas llamadas",
+"die Telefongesellschaft [[liefert]] ihnen die Daten der letzten Anrufe"
+]
+]
+},
+{
+"wort": "suplir",
+"bedeutung": "vertreten",
+"n": 347,
+"beispiele": [
+[
+"y allí estaba él para [[suplir]] sus funciones",
+"und da war er, um ihre Aufgaben zu [[übernehmen]]"
+]
+]
+},
+{
+"wort": "susto m",
+"bedeutung": "Schreck",
+"n": 348,
+"beispiele": [
+[
+"Más bien un buen [[susto]] que se le fue de las manos.",
+"Eher ein ordentlicher [[Schreck]], der ihm aus den Händen glitt."
+]
+]
+},
+{
+"wort": "susurro m",
+"bedeutung": "Flüstern",
+"n": 349,
+"beispiele": [
+[
+"—pregunta en un [[susurro]].",
+"fragt sie im [[Flüsterton]]."
+]
+]
+},
+{
+"wort": "taladrante",
+"bedeutung": "durchdringend",
+"n": 350,
+"beispiele": [
+[
+"ese ruido ensordecedor y [[taladrante]] de la bocina",
+"dieser ohrenbetäubende und [[durchdringende]] Lärm der Hupe"
+]
+]
+},
+{
+"wort": "taponar",
+"bedeutung": "verstopfen",
+"n": 351,
+"beispiele": [
+[
+"trapos que [[taponaban]] el tubo de escape",
+"Lumpen, die das Auspuffrohr [[verstopften]]"
+]
+]
+},
+{
+"wort": "telaraña f",
+"bedeutung": "Spinnwebe",
+"n": 352,
+"beispiele": [
+[
+"¿quieres ir a comprar cuando no tengamos más que [[telarañas]] en el frigo?",
+"willst du erst einkaufen, wenn wir nur noch [[Spinnweben]] im Kühlschrank haben?"
+]
+]
+},
+{
+"wort": "temblor m",
+"bedeutung": "Zittern",
+"n": 353,
+"beispiele": [
+[
+"—dice, con un ligero [[temblor]] en la voz—",
+"sagt er mit einem leichten [[Zittern]] in der Stimme"
+]
+]
+},
+{
+"wort": "tendido",
+"bedeutung": "liegend",
+"n": 354,
+"beispiele": [
+[
+"Parece un hombre... [[tendido]] en el suelo.",
+"Es sieht aus wie ein Mann, der am Boden [[liegt]]."
+]
+]
+},
+{
+"wort": "tener irr al corriente",
+"bedeutung": "auf dem Laufenden halten",
+"n": 355,
+"beispiele": [
+[
+"Lo que sea, pero sólo te pido que me [[tengas al corriente]].",
+"Alles, was du willst, aber ich bitte dich nur, mich [[auf dem Laufenden zu halten]]."
+]
+]
+},
+{
+"wort": "tener irr ganas a alguien",
+"bedeutung": "jmd. eine drauf geben wollen",
+"n": 356,
+"umg": true,
+"beispiele": [
+[
+"Había gente que [[te tenía ganas]].",
+"Es gab Leute, die [[dir eine drauf geben wollten]]."
+]
+]
+},
+{
+"wort": "terminar como el rosario de la aurora",
+"bedeutung": "ein böses Ende nehmen",
+"n": 357,
+"bildlich": true,
+"beispiele": [
+[
+"ese taller hacía una labor muy útil, pero [[terminó como el rosario de la aurora]]",
+"dieser Kurs leistete sehr nützliche Arbeit, aber er [[nahm ein böses Ende]]"
+]
+]
+},
+{
+"wort": "tinerfeño",
+"bedeutung": "aus Teneriffa",
+"n": 358,
+"beispiele": [
+[
+"Ella es [[tinerfeña]] y él, grancanario.",
+"Sie ist [[aus Teneriffa]] und er aus Gran Canaria."
+]
+]
+},
+{
+"wort": "tirón m",
+"bedeutung": "Zerren",
+"n": 359,
+"beispiele": [
+[
+"Con un [[tirón]] de la camisa, Andrea consiguió despertarme.",
+"Mit einem [[Zerren]] am Hemd schaffte es Andrea, mich wachzurütteln."
+]
+]
+},
+{
+"wort": "tomar el pelo",
+"bedeutung": "sich über jmd. lustig machen",
+"n": 360,
+"umg": true,
+"beispiele": [
+[
+"A mí a veces [[me toma el pelo]].",
+"Über mich [[macht er sich]] manchmal [[lustig]]."
+]
+]
+},
+{
+"wort": "toparse con alguien",
+"bedeutung": "jmd. treffen",
+"n": 361,
+"beispiele": [
+[
+"pero no [[se topan con]] nadie que le haya conocido",
+"aber sie [[treffen]] niemanden, der ihn gekannt hat"
+]
+]
+},
+{
+"wort": "torvo",
+"bedeutung": "furchteinflößend",
+"n": 362
+},
+{
+"wort": "trago m amargo",
+"bedeutung": "bittere Pille",
+"n": 363,
+"beispiele": [
+[
+"uno de los [[tragos más amargos]] de su vida",
+"eine der [[bittersten Pillen]] seines Lebens"
+]
+]
+},
+{
+"wort": "traicionar",
+"bedeutung": "hier: missbrauchen",
+"n": 364,
+"beispiele": [
+[
+"[[Traicionaría]] la confianza de Fernando.",
+"Ich würde Fernandos Vertrauen [[missbrauchen]]."
+]
+]
+},
+{
+"wort": "trampa f",
+"bedeutung": "Falle",
+"n": 365,
+"beispiele": [
+[
+"¿Y si se trata de una [[trampa]]?",
+"Und wenn es eine [[Falle]] ist?"
+]
+]
+},
+{
+"wort": "transitar",
+"bedeutung": "befahren",
+"n": 366,
+"beispiele": [
+[
+"Es una calle poco [[transitada]].",
+"Es ist eine wenig [[befahrene]] Straße."
+]
+]
+},
+{
+"wort": "trapo m",
+"bedeutung": "Lumpen",
+"n": 367,
+"beispiele": [
+[
+"[[trapos]] que taponaban el tubo de escape",
+"[[Lumpen]], die das Auspuffrohr verstopften"
+]
+]
+},
+{
+"wort": "treta f",
+"bedeutung": "Trick",
+"n": 368,
+"beispiele": [
+[
+"Conocía las [[tretas]] de Serrano.",
+"Er kannte Serranos [[Tricks]]."
+]
+]
+},
+{
+"wort": "tubo m de escape",
+"bedeutung": "Auspuffrohr",
+"n": 369,
+"beispiele": [
+[
+"trapos que taponaban el [[tubo de escape]]",
+"Lumpen, die das [[Auspuffrohr]] verstopften"
+]
+]
+},
+{
+"wort": "tumbona f",
+"bedeutung": "Liegestuhl",
+"n": 370,
+"beispiele": [
+[
+"la arena está cubierta de toallas y [[tumbonas]]",
+"der Sand ist mit Handtüchern und [[Liegestühlen]] bedeckt"
+]
+]
+},
+{
+"wort": "turno m",
+"bedeutung": "Schicht",
+"n": 371,
+"beispiele": [
+[
+"—Sí, era mi [[turno]], ¿por qué?",
+"„Ja, es war meine [[Schicht]], warum?“"
+]
+]
+},
+{
+"wort": "usurero m",
+"bedeutung": "Halsabschneider",
+"n": 372,
+"beispiele": [
+[
+"Ese [[usurero]] no tiene escrúpulos.",
+"Dieser [[Halsabschneider]] hat keine Skrupel."
+]
+]
+},
+{
+"wort": "vacilar",
+"bedeutung": "zögern",
+"n": 373,
+"beispiele": [
+[
+"La inspectora se dirigió a él sin [[vacilar]] un momento.",
+"Die Inspektorin ging auf ihn zu, ohne einen Moment zu [[zögern]]."
+]
+]
+},
+{
+"wort": "vanguardista m/f",
+"bedeutung": "Avantgardist(in)",
+"n": 374,
+"beispiele": [
+[
+"varios cuadros de pintores [[vanguardistas]]",
+"mehrere Bilder [[avantgardistischer]] Maler"
+]
+]
+},
+{
+"wort": "verja f",
+"bedeutung": "Zaun",
+"n": 375,
+"beispiele": [
+[
+"con amplio jardín rodeado por una [[verja]]",
+"mit großem Garten, umgeben von einem [[Zaun]]"
+]
+]
+},
+{
+"wort": "vigésimo",
+"bedeutung": "zwanzigste/-r/-s",
+"n": 376,
+"beispiele": [
+[
+"desde el balcón del [[vigésimo]] piso del Hotel Guajira",
+"vom Balkon des [[zwanzigsten]] Stocks des Hotel Guajira"
+]
+]
+},
+{
+"wort": "vínculo m",
+"bedeutung": "Zusammenhang",
+"n": 377,
+"beispiele": [
+[
+"debían encontrar el [[vínculo]] que les llevara a él",
+"sie mussten den [[Zusammenhang]] finden, der sie zu ihm führte"
+]
+]
+},
+{
+"wort": "volante m",
+"bedeutung": "hier: Steuer",
+"n": 378,
+"beispiele": [
+[
+"Oye, mejor me pongo al [[volante]], tú estás demasiado cansada.",
+"Hör mal, ich setze mich lieber ans [[Steuer]], du bist zu müde."
+]
+]
+},
+{
+"wort": "volver irr las aguas a su cauce",
+"bedeutung": "eine Sache ins Lot bringen",
+"n": 379,
+"bildlich": true,
+"beispiele": [
+[
+"pero ya [[las aguas volvieron a su cauce]]",
+"aber inzwischen ist [[die Sache wieder im Lot]]"
+]
+]
+},
+{
+"wort": "zorra f",
+"bedeutung": "Schlampe",
+"n": 380,
+"umg": true,
+"beispiele": [
+[
+"—¡Déjame, [[zorra]]! —grita Porfirio.",
+"„Lass mich los, du [[Schlampe]]!“, schreit Porfirio."
+]
+]
+}
+]
+}

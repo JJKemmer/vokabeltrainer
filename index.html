@@ -38,7 +38,17 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16p
 .wrap{max-width:640px;margin:0 auto;padding-block:20px 48px;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
   display:flex;flex-direction:column;gap:18px}
-header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.helpbtn{width:36px;height:36px;padding:0;border-radius:50%;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.15rem;color:var(--rose);border-color:var(--rose);flex:none}
+.help{position:fixed;inset:0;z-index:20;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.help .in{max-width:640px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+.help .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.help h3{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--rose);margin:0 0 4px}
+.help p,.help ul{margin:0;line-height:1.5}
+.help ul{padding-left:1.1em}
+.help li+li{margin-top:3px}
+.help .steps{display:flex;gap:4px;flex-wrap:wrap;font-size:.8rem;font-variant-numeric:tabular-nums}
+.help .steps span{border:1px solid var(--line);border-radius:6px;padding:2px 7px;background:var(--paper)}
 h1{font-family:var(--serif);font-weight:600;color:var(--rose);font-size:1.9rem;margin:0}
 h2{font-family:var(--serif);font-weight:600;font-size:1.2rem;margin:0}
 .muted{color:var(--muted)}
@@ -59,6 +69,12 @@ button[aria-pressed="true"]{background:var(--rose);border-color:var(--rose);colo
 .box b{display:block;font-family:var(--serif);font-size:1.3rem;font-variant-numeric:tabular-nums;color:var(--rose)}
 .box span{font-size:.72rem;color:var(--muted)}
 .dueline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.overview{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:stretch;font-size:.82rem}
+.overview .h{color:var(--muted);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;align-self:end}
+.overview .m{align-self:center;color:var(--muted)}
+.overview button{padding:6px 8px;border-radius:8px;text-align:left;font-size:.82rem;line-height:1.25;font-variant-numeric:tabular-nums}
+.overview button b{color:var(--rose)}
+.overview button[aria-pressed="true"] b{color:inherit}
 /* session */
 .progress{height:6px;background:var(--band);border-radius:99px;overflow:hidden}
 .progress i{display:block;height:100%;background:var(--rose);width:0;transition:width .25s}
@@ -108,8 +124,62 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
 <div class="wrap">
   <header>
     <h1>Vokabeltrainer</h1>
-    <span class="muted small" id="total"></span>
+    <button class="helpbtn" id="help-btn" aria-label="Kurzanleitung öffnen" title="Kurzanleitung">i</button>
   </header>
+
+  <div class="help" id="help" hidden role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <div class="in">
+      <div class="top">
+        <h2 id="help-title">So funktioniert's</h2>
+        <button id="help-close" class="primary" style="padding:8px 14px">Schließen</button>
+      </div>
+
+      <section class="panel">
+        <h3>Der Karteikasten</h3>
+        <p>Jede Vokabel wandert durch fünf Fächer. Weißt du sie, rückt sie ein Fach weiter und kommt erst später wieder. Weißt du sie nicht, fällt sie zurück in Fach&nbsp;1.</p>
+        <div class="steps"><span>Fach 1: gleich wieder</span><span>Fach 2: nach 1 Tag</span><span>Fach 3: nach 3 Tagen</span><span>Fach 4: nach 7 Tagen</span><span>Fach 5: nach 16 Tagen</span></div>
+        <p class="small muted">Für jede Kombination aus Übungsart und Richtung gibt es einen eigenen Karteikasten. Den Stand aller sechs siehst du unter „Überblick aller Kombinationen“.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Übungsart</h3>
+        <ul>
+          <li><b>Karteikarten:</b> Antwort überlegen, aufdecken und ehrlich selbst bewerten.</li>
+          <li><b>Multiple Choice:</b> die richtige von vier Antworten antippen.</li>
+          <li><b>Schreiben:</b> die Antwort eintippen. Akzente und Groß-/Kleinschreibung sind egal, eine der Bedeutungen genügt. Bewertet die App zu streng, tippe auf „Ich hatte recht“.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h3>Richtung</h3>
+        <p>Von der Fremdsprache ins Deutsche, umgekehrt oder gemischt. Bei „Gemischt“ zählt jede Karte für die Richtung, in der sie gerade abgefragt wurde.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Auswahl</h3>
+        <ul>
+          <li><b>Fällig &amp; neu:</b> für das tägliche Lernen. Erst die heute fälligen Karten, dann zufällig neue.</li>
+          <li><b>Alle:</b> zufällige Auswahl aus allen Vokabeln, z.&nbsp;B. zum Wiederholen vor einem Test.</li>
+          <li><b>Schwache:</b> nur Karten aus Fach&nbsp;1 und&nbsp;2, um gezielt Problemwörter zu üben.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h3>Während der Runde</h3>
+        <p>Viele Karten zeigen einen Beispielsatz mit dem Lernwort. Nach dem Aufdecken siehst du die Übersetzung. Falsch beantwortete Karten kommen in derselben Runde noch einmal, gewertet wird aber nur der erste Versuch.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Lernstand sichern</h3>
+        <p>Dein Fortschritt liegt nur auf diesem Gerät. Sichere ihn ab und zu unter „Lernstand sichern &amp; übertragen“, als Datei oder als Code in einer Notiz. Damit kannst du ihn auch auf ein anderes Gerät übertragen. Auf dem iPhone ist das besonders wichtig, weil iOS die Daten löschen kann, wenn die App mehrere Wochen nicht geöffnet wird.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Vokabeln</h3>
+        <p>Unter „Vokabeln verwalten“ lädst du eine andere Vokabeldatei. Eigene Listen gehen als CSV-Datei, z.&nbsp;B. aus Excel: <b>Wort; Übersetzung; Beispielsatz; Übersetzung des Beispielsatzes</b>. Bei einer neuen Version derselben Liste bleibt der Lernstand erhalten.</p>
+      </section>
+    </div>
+  </div>
 
   <!-- KEINE VOKABELN -->
   <section id="empty" class="panel" hidden>
@@ -131,10 +201,15 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
   <!-- SETUP -->
   <section id="setup" class="panel" hidden>
     <div class="field">
-      <span class="label">Dein Karteikasten</span>
+      <span class="label" id="shelf-label">Dein Karteikasten</span>
       <div class="shelf" id="shelf"></div>
       <div class="dueline small"><span id="dueinfo"></span><span class="muted">Fach 5 = sicher gelernt</span></div>
     </div>
+    <details class="field" id="ov-wrap">
+      <summary class="label" style="cursor:pointer">Überblick aller Kombinationen</summary>
+      <div class="overview" id="overview" style="margin-top:8px"></div>
+      <p class="small muted" style="margin:6px 0 0">Jede Kombination aus Übungsart und Richtung hat ihren eigenen Karteikasten. Antippen wählt sie aus.</p>
+    </details>
     <div class="field">
       <span class="label">Übungsart</span>
       <div class="seg" data-key="mode">
@@ -157,9 +232,6 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
         <button id="p-due" data-v="due">Fällig &amp; neu</button>
         <button id="p-all" data-v="all">Alle</button>
         <button id="p-weak" data-v="weak">Schwache (Fach 1–2)</button>
-        <button id="p-u" data-v="u">Umgangssprachlich</button>
-        <button id="p-fig" data-v="fig">Bildlich</button>
-        <button id="p-ex" data-v="ex">Mit Beispielsatz</button>
       </div>
     </div>
     <div class="field">
@@ -199,8 +271,8 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
       <div id="bk-msg" class="note" hidden></div>
     </details>
     <div class="confirm">
-      <button class="linkbtn" id="reset">Fortschritt zurücksetzen</button>
-      <span id="resetask" hidden>Wirklich alles auf neu setzen?
+      <button class="linkbtn" id="reset">Fortschritt dieser Kombination zurücksetzen</button>
+      <span id="resetask" hidden><span id="resetwhat">Wirklich auf neu setzen?</span>
         <button id="resetyes" class="btn-bad">Ja, zurücksetzen</button>
         <button id="resetno">Abbrechen</button></span>
     </div>
@@ -274,18 +346,13 @@ function applyDeck(d){
     ex: k.beispiele.map(([es, de]) => ({ es, de })) }));
   $("d-esde").textContent = `${L1} → ${L2}`;
   $("d-dees").textContent = `${L2} → ${L1}`;
-  $("p-u").hidden = !DATA.some(d => d.u);
-  $("p-fig").hidden = !DATA.some(d => d.fig);
-  $("p-ex").hidden = !DATA.some(d => d.ex.length);
-  if ((store.prefs.pool === "u" && $("p-u").hidden) || (store.prefs.pool === "fig" && $("p-fig").hidden) || (store.prefs.pool === "ex" && $("p-ex").hidden)) store.prefs.pool = "due";
-  const nEx = DATA.filter(d => d.ex.length).length;
-  $("total").textContent = nEx ? `${nEx} ${nEx === 1 ? "Vokabel" : "Vokabeln"} mit ${nEx === 1 ? "Beispielsatz" : "Beispielsätzen"}` : `${DATA.length} ${DATA.length === 1 ? "Vokabel" : "Vokabeln"}`;
+  if (!["due", "all", "weak"].includes(store.prefs.pool)) store.prefs.pool = "due";
   $("deck-info").textContent = `Geladen: „${d.titel}“ mit ${DATA.length} Vokabeln.`;
 }
 function showScreen(){
   const has = DATA.length > 0;
   $("empty").hidden = has; $("setup").hidden = !has; $("summary").hidden = true; $("session").hidden = true;
-  if (has) paintSetup(); else $("total").textContent = "";
+  if (has) paintSetup();
 }
 const deckMsg = t => document.querySelectorAll("[data-msg]").forEach(el => { el.textContent = t; el.hidden = !t; });
 function loadDeckText(txt, name){
@@ -313,80 +380,109 @@ const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
 
 // ---------- storage (per browser) ----------
 const KEY = "vokabelkasten-v1";
-let store = { cards: {}, prefs: { mode: "flash", dir: "esde", pool: "due", size: "20" } };
-try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.cards) store = { ...store, ...s, prefs: { ...store.prefs, ...s.prefs } }; } catch {}
+const MODES = ["flash", "mc", "type"], DIRS = ["esde", "dees"];
+const MODE_NAME = { flash: "Karteikarten", mc: "Multiple Choice", type: "Schreiben" };
+const TRACKS = MODES.flatMap(m => DIRS.map(d => m + "|" + d));
+const emptyTracks = () => Object.fromEntries(TRACKS.map(t => [t, {}]));
+const tracksFrom = cards => Object.fromEntries(TRACKS.map(t => [t, JSON.parse(JSON.stringify(cards || {}))]));
+let store = { tracks: emptyTracks(), prefs: { mode: "flash", dir: "esde", pool: "due", size: "20" } };
+try { const s = JSON.parse(localStorage.getItem(KEY)); if (s) store = { ...store, ...s, prefs: { ...store.prefs, ...s.prefs } }; } catch {}
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch {} };
+// Umstellung: bisheriger gemeinsamer Lernstand wird Startpunkt für alle Kombinationen
+if (store.cards) { store.tracks = tracksFrom(store.cards); delete store.cards; save(); }
+for (const t of TRACKS) store.tracks[t] = store.tracks[t] || {};
+if (!["due", "all", "weak"].includes(store.prefs.pool)) store.prefs.pool = "due";
 
 // Leitner: box 0 = neu, 1..5; Wiederholung nach Tagen
 const INTERVAL = [0, 0, 1, 3, 7, 16];
 const DAY = 864e5;
 const today = () => Math.floor(Date.now() / DAY);
-const st = id => store.cards[id] || { box: 0, due: 0 };
-const isDue = id => { const c = st(id); return c.box > 0 && c.due <= today(); };
+const trk = (dir, mode = store.prefs.mode) => mode + "|" + dir;
+const st = (id, tr) => store.tracks[tr][id] || { box: 0, due: 0 };
+const isDue = (id, tr) => { const c = st(id, tr); return c.box > 0 && c.due <= today(); };
+const curDirs = () => store.prefs.dir === "mix" ? DIRS : [store.prefs.dir];
+const dirName = d => d === "esde" ? `${L1} → ${L2}` : `${L2} → ${L1}`;
 
 // ---------- setup UI ----------
 const $ = id => document.getElementById(id);
 
 function paintSetup(){
-  const counts = [0,0,0,0,0,0];
-  DATA.forEach(d => counts[st(d.id).box]++);
+  const dirs = curDirs(), counts = [0,0,0,0,0,0];
+  let due = 0;
+  for (const d of DATA) for (const r of dirs) { counts[st(d.id, trk(r)).box]++; if (isDue(d.id, trk(r))) due++; }
   const names = ["neu","Fach 1","Fach 2","Fach 3","Fach 4","Fach 5"];
+  $("shelf-label").textContent = `Karteikasten · ${MODE_NAME[store.prefs.mode]} · ${store.prefs.dir === "mix" ? "beide Richtungen" : dirName(store.prefs.dir)}`;
   $("shelf").innerHTML = counts.map((n, i) => `<div class="box"><b>${n}</b><span>${names[i]}</span></div>`).join("");
-  const due = DATA.filter(d => isDue(d.id)).length;
   $("dueinfo").textContent = due ? `${due} ${due === 1 ? "Karte" : "Karten"} heute fällig` : "Heute nichts fällig";
+  let ov = `<span></span><span class="h">${esc(dirName("esde"))}</span><span class="h">${esc(dirName("dees"))}</span>`;
+  for (const m of MODES) {
+    ov += `<span class="m">${MODE_NAME[m]}</span>`;
+    for (const r of DIRS) {
+      const tr = m + "|" + r; let sure = 0, du = 0, seen = 0;
+      for (const d of DATA) { const c = st(d.id, tr); if (c.box) seen++; if (c.box === 5) sure++; if (isDue(d.id, tr)) du++; }
+      const on = m === store.prefs.mode && (store.prefs.dir === r || store.prefs.dir === "mix");
+      ov += `<button data-m="${m}" data-d="${r}" aria-pressed="${on}"><b>${sure}</b> sicher<br>${du} fällig · ${DATA.length - seen} neu</button>`;
+    }
+  }
+  $("overview").innerHTML = ov;
   document.querySelectorAll(".seg").forEach(g => {
     const k = g.dataset.key;
     g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === store.prefs[k]));
   });
-  $("start").disabled = buildPool().length === 0;
-  $("start").textContent = buildPool().length ? "Runde starten" : "Keine Karten in dieser Auswahl";
+  const n = buildPool().length;
+  $("start").disabled = n === 0;
+  $("start").textContent = n ? "Runde starten" : "Keine Karten in dieser Auswahl";
 }
+$("overview").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  store.prefs.mode = b.dataset.m; store.prefs.dir = b.dataset.d; save(); paintSetup();
+});
 document.querySelectorAll(".seg").forEach(g => g.addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   store.prefs[g.dataset.key] = b.dataset.v; save(); paintSetup();
 }));
-$("reset").onclick = () => $("resetask").hidden = false;
+$("reset").onclick = () => { $("resetwhat").textContent = `${MODE_NAME[store.prefs.mode]} · ${store.prefs.dir === "mix" ? "beide Richtungen" : dirName(store.prefs.dir)} auf neu setzen?`; $("resetask").hidden = false; };
 $("resetno").onclick = () => $("resetask").hidden = true;
-$("resetyes").onclick = () => { store.cards = {}; save(); $("resetask").hidden = true; paintSetup(); };
+$("resetyes").onclick = () => { for (const r of curDirs()) store.tracks[trk(r)] = {}; save(); $("resetask").hidden = true; paintSetup(); };
 
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
 function buildPool(){
-  const p = store.prefs.pool;
-  if (p === "all") return DATA.slice();
-  if (p === "u") return DATA.filter(d => d.u);
-  if (p === "fig") return DATA.filter(d => d.fig);
-  if (p === "ex") return DATA.filter(d => d.ex.length);
-  if (p === "weak") return DATA.filter(d => { const b = st(d.id).box; return b === 1 || b === 2; });
-  // fällig zuerst, dann neue in Buchreihenfolge
-  const due = DATA.filter(d => isDue(d.id));
-  const fresh = DATA.filter(d => st(d.id).box === 0);
-  return due.concat(fresh);
+  const p = store.prefs.pool, dirs = curDirs(), out = [];
+  for (const d of DATA) {
+    let ok;
+    if (p === "all") ok = dirs;
+    else if (p === "weak") ok = dirs.filter(r => { const b = st(d.id, trk(r)).box; return b === 1 || b === 2; });
+    else ok = dirs.filter(r => isDue(d.id, trk(r)) || st(d.id, trk(r)).box === 0);
+    if (ok.length) out.push({ d, dirs: ok });
+  }
+  return out;
 }
 
 // ---------- session ----------
 let S = null;
 function start(){
   let pool = buildPool();
-  const n = +store.prefs.size;
-  if (store.prefs.pool === "due") {
-    const due = shuffle(pool.filter(d => st(d.id).box > 0)), fresh = shuffle(pool.filter(d => st(d.id).box === 0));
+  const n = +store.prefs.size, isDuePool = store.prefs.pool === "due";
+  const dueDirs = x => x.dirs.filter(r => isDue(x.d.id, trk(r)));
+  if (isDuePool) {
+    const due = shuffle(pool.filter(x => dueDirs(x).length)), fresh = shuffle(pool.filter(x => !dueDirs(x).length));
     pool = due.concat(fresh).slice(0, n);
   } else pool = shuffle(pool).slice(0, n);
   shuffle(pool);
-  S = { queue: pool.map(d => ({ d, dir: pickDir() })), total: pool.length, done: 0, right: 0, misses: [], seen: new Set() };
+  const pick = x => { const dd = isDuePool ? dueDirs(x) : []; const c = dd.length ? dd : x.dirs; return c[Math.random() * c.length | 0]; };
+  S = { queue: pool.map(x => ({ d: x.d, dir: pick(x) })), total: pool.length, done: 0, right: 0, misses: [], seen: new Set() };
   $("setup").hidden = true; $("summary").hidden = true; $("session").hidden = false;
   next();
 }
-const pickDir = () => store.prefs.dir === "mix" ? (Math.random() < .5 ? "esde" : "dees") : store.prefs.dir;
 
 function grade(d, ok){
   const firstTry = !S.seen.has(d.id);
   S.seen.add(d.id);
-  const c = st(d.id);
+  const tr = trk(S.cur.dir), c = st(d.id, tr);
   if (firstTry){
     const box = ok ? Math.min(5, Math.max(1, c.box + 1)) : 1;
-    store.cards[d.id] = { box, due: today() + INTERVAL[box] };
+    store.tracks[tr][d.id] = { box, due: today() + INTERVAL[box] };
     save();
     if (ok) S.right++; else S.misses.push(d);
     S.done++;
@@ -535,20 +631,20 @@ sess.style.display = "none";
 
 // ---------- Lernstand sichern / wiederherstellen ----------
 const bkMsg = t => { $("bk-msg").textContent = t; $("bk-msg").hidden = false; };
-const exportText = () => JSON.stringify({ app: "vokabelkasten", v: 1, date: new Date().toISOString(), cards: store.cards });
+const exportText = () => JSON.stringify({ app: "vokabelkasten", v: 2, date: new Date().toISOString(), tracks: store.tracks });
 function importText(txt){
   let o; try { o = JSON.parse(txt.trim()); } catch { return bkMsg("Der Code ist unvollständig oder beschädigt. Bitte komplett kopieren und erneut einfügen."); }
-  if (o && o.app === "vokabelkasten" && o.cards && !o.karten) store.cards = o.cards;
+  if (o && o.app === "vokabelkasten" && o.tracks) { store.tracks = emptyTracks(); for (const t of TRACKS) Object.assign(store.tracks[t], o.tracks[t] || {}); }
+  else if (o && o.app === "vokabelkasten" && o.cards && !o.karten) store.tracks = tracksFrom(o.cards);
   else if (o && o.app === "glosario" && o.cards) {
     const byN = new Map(DATA.filter(d => d.n !== undefined).map(d => [String(d.n), d.id]));
     const c = {}; for (const [k, v] of Object.entries(o.cards)) { const id = byN.get(String(k)); if (id) c[id] = v; }
     if (!Object.keys(c).length) return bkMsg("Der Lernstand passt nicht zu den geladenen Vokabeln.");
-    store.cards = c;
+    store.tracks = tracksFrom(c);
   } else if (o && o.karten) return bkMsg("Das ist eine Vokabeldatei, kein Lernstand. Lade sie unter „Vokabeln verwalten“.");
   else return bkMsg("Das ist kein Lernstand aus diesem Trainer.");
   save(); paintSetup();
-  const n = Object.keys(store.cards).length;
-  bkMsg(`Lernstand übernommen: ${n} ${n === 1 ? "Karte" : "Karten"}${o.date ? " (gesichert am " + new Date(o.date).toLocaleDateString("de-DE") + ")" : ""}.`);
+  bkMsg(`Lernstand übernommen${o.date ? " (gesichert am " + new Date(o.date).toLocaleDateString("de-DE") + ")" : ""}.`);
 }
 $("exp-file").onclick = async () => {
   const name = `vokabeltrainer-lernstand-${new Date().toISOString().slice(0,10)}.json`;
@@ -572,6 +668,13 @@ $("imp-go").onclick = () => { if ($("imp-text").value.trim()) importText($("imp-
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
 
+// Kurzanleitung
+const openHelp = () => { $("help").hidden = false; document.body.style.overflow = "hidden"; $("help").scrollTop = 0; $("help-close").focus(); };
+const closeHelp = () => { $("help").hidden = true; document.body.style.overflow = ""; $("help-btn").focus(); };
+$("help-btn").onclick = openHelp;
+$("help-close").onclick = closeHelp;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("help").hidden) closeHelp(); });
+
 // Vokabeln laden / verwalten
 $("deck-file-btn").onclick = $("deck-replace").onclick = () => { deckMsg(""); $("deck-file").click(); };
 $("deck-file").onchange = async e => { const f = e.target.files[0]; if (f) loadDeckText(await readFileText(f), f.name); e.target.value = ""; };
@@ -580,7 +683,7 @@ $("deck-remove").onclick = () => $("deck-removeask").hidden = false;
 $("deck-removeno").onclick = () => $("deck-removeask").hidden = true;
 $("deck-removeyes").onclick = () => {
   try { localStorage.removeItem(DECK_KEY); } catch {}
-  store.cards = {}; save(); DECK = null; DATA = []; $("deck-removeask").hidden = true; deckMsg(""); showScreen();
+  store.tracks = emptyTracks(); save(); DECK = null; DATA = []; $("deck-removeask").hidden = true; deckMsg(""); showScreen();
 };
 try { const d = JSON.parse(localStorage.getItem(DECK_KEY)); if (d) applyDeck(normalizeDeck(d)); } catch {}
 showScreen();
