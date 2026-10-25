@@ -1,5 +1,5 @@
 // Offline-Cache. Bei Änderungen an den Dateien VERSION erhöhen.
-const VERSION = "vokabelkasten-v7";
+const VERSION = "vokabelkasten-v8";
 const FILES = ["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png"];
 
 self.addEventListener("install", e => {

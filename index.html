@@ -178,7 +178,7 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
 
       <section class="panel">
         <h3>Wortschätze</h3>
-        <p>Vorinstalliert ist ein Grundwortschatz mit 1.000 Wörtern. Mit „Wortschatz hochladen“ fügst du eigene Wortschätze hinzu und wählst oben aus, welcher gerade benutzt wird. Für jeden Wortschatz merkt sich die App den Lernstand getrennt. Entfernst du einen Wortschatz und lädst ihn später unter demselben Namen wieder hoch, ist dein Stand wieder da.</p>
+        <p>Vorinstalliert ist ein Grundwortschatz mit 1.000 Wörtern. Oben unter „Wortschatz“ wählst du aus, welcher gerade benutzt wird. Eigene Wortschätze lädst du unter „Wortschätze verwalten“ hoch, das findest du unterhalb von „Runde starten“. Dort kannst du hochgeladene Wortschätze auch wieder entfernen. Für jeden Wortschatz merkt sich die App den Lernstand getrennt. Entfernst du einen Wortschatz und lädst ihn später unter demselben Namen wieder hoch, ist dein Stand wieder da.</p>
         <p>Eigene Listen gehen als CSV-Datei, z.&nbsp;B. aus Excel: <b>Wort; Übersetzung; Beispielsatz; Übersetzung des Beispielsatzes</b>. Der Dateiname wird zum Namen des Wortschatzes.</p>
       </section>
     </div>
@@ -206,14 +206,6 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
     <div class="field">
       <label class="label" for="deck-select">Wortschatz</label>
       <select id="deck-select"></select>
-      <div class="backup" style="margin-top:4px">
-        <button id="deck-replace">Wortschatz hochladen</button>
-        <button id="deck-remove" class="btn-bad">Entfernen</button>
-      </div>
-      <div class="confirm" id="deck-removeask" hidden><span id="deck-removewhat"></span>
-        <button id="deck-removeyes" class="btn-bad">Ja, entfernen</button>
-        <button id="deck-removeno">Abbrechen</button></div>
-      <div class="note" data-msg hidden></div>
     </div>
     <div class="field">
       <span class="label" id="shelf-label">Dein Karteikasten</span>
@@ -258,6 +250,18 @@ kbd{font-family:var(--sans);border:1px solid var(--line);border-radius:4px;paddi
       </div>
     </div>
     <button class="primary" id="start">Runde starten</button>
+    <details class="field" id="decks-manage">
+      <summary class="label" style="cursor:pointer">Wortschätze verwalten</summary>
+      <p class="small muted" style="margin:8px 0">Lade eigene Wortschätze als JSON- oder CSV-Datei hoch. Oben unter „Wortschatz“ wählst du aus, welcher benutzt wird. Der Lernstand wird pro Wortschatz gespeichert.</p>
+      <div class="backup">
+        <button id="deck-replace">Wortschatz hochladen</button>
+        <button id="deck-remove" class="btn-bad">Ausgewählten entfernen</button>
+      </div>
+      <div class="confirm" id="deck-removeask" hidden style="margin-top:8px"><span id="deck-removewhat"></span>
+        <button id="deck-removeyes" class="btn-bad">Ja, entfernen</button>
+        <button id="deck-removeno">Abbrechen</button></div>
+      <div class="note" data-msg hidden style="margin-top:8px"></div>
+    </details>
     <input type="file" id="deck-file" hidden>
     <details class="field">
       <summary class="label" style="cursor:pointer">Lernstand sichern &amp; übertragen</summary>
@@ -699,7 +703,7 @@ function importText(txt){
     const c = {}; for (const [k, v] of Object.entries(o.cards)) { const id = byN.get(String(k)); if (id) c[id] = v; }
     if (!Object.keys(c).length) return bkMsg("Der Lernstand passt nicht zu den geladenen Vokabeln.");
     store.tracks = tracksFrom(c);
-  } else if (o && o.karten) return bkMsg("Das ist eine Vokabeldatei, kein Lernstand. Lade sie oben mit „Wortschatz hochladen“.");
+  } else if (o && o.karten) return bkMsg("Das ist eine Vokabeldatei, kein Lernstand. Lade sie unter „Wortschätze verwalten“ hoch.");
   else return bkMsg("Das ist kein Lernstand aus diesem Trainer.");
   save(); paintSetup();
   bkMsg(`Lernstand übernommen${o.date ? " (gesichert am " + new Date(o.date).toLocaleDateString("de-DE") + ")" : ""}.`);
