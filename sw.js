@@ -1,12 +1,12 @@
 // Offline-Cache. Bei Änderungen an den Dateien VERSION erhöhen.
-const VERSION = "vokabelkasten-v28";
+const VERSION = "vokabelkasten-v30";
 const FILES = ["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("vokabelkasten-") && k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 // Netz zuerst (damit Updates ankommen), bei fehlender Verbindung aus dem Cache
 self.addEventListener("fetch", e => {
